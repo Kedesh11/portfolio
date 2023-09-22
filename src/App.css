@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(33,36,40);
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input, textarea{
+  box-shadow: inset -5px 5px 0px #0a0b0c,
+              inset 5px -5px 0px #282b30;
+  border-color: #191B1E;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-form{
+  box-shadow: -7px 7px 11px #121315,
+              7px -7px 11px #202327;
+  color: #878e99;
 }
 
-.App-link {
-  color: #61dafb;
+.div-form, .div-left{
+  box-shadow: -7px 7px 11px #202327,
+                7px -7px 11px #121315;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.div-left p, h2{
+  color: #878e99;
 }
+.div-form label{
+  color: #878e99;
+  margin-bottom: 10px;
+  font-size: small;
+}
+
+.blog-card{
+  background: linear-gradient(225deg, #1b1d20, #17181b);
+  box-shadow:  -9px 9px 11px #15171a,
+               9px -9px 11px #1d1f23;
+}
+

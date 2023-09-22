@@ -1,10 +1,10 @@
 import React from "react";
-import { ReactDO } from "react";
+// import { ReactDOM } from "react";
 
-export default Card(props){
+export default function Card(props){
     return (
         <div>
-            <h1>Hello world</h1>
+            
         </div>
     );
 }
