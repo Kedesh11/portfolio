@@ -15,27 +15,27 @@ export default function App() {
         <h1 className="text-[#878e99] text-6xl flex justify-center font-bold">WHAT I DO</h1>
         <div className="grid grid-cols-3 my-[3em] gap-10">
         <a href="#">
-            <div className="h-[400px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card"></div>
+            <div className="h-[350px] w-[350px] rounded-lg flex flex-col px-[2em] blog-card"></div>
           </a>
 
           <a href="#">
-            <div className="h-[400px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card"></div>
+            <div className="h-[350px] w-[350px] rounded-lg flex flex-col px-[2em] blog-card"></div>
           </a>
 
           <a href="#">
-            <div className="h-[400px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card"></div>
+            <div className="h-[350px] w-[350px] rounded-lg flex flex-col px-[2em] blog-card"></div>
           </a>
 
           <a href="#">
-            <div className="h-[400px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card"></div>
+            <div className="h-[350px] w-[350px] rounded-lg flex flex-col px-[2em] blog-card"></div>
           </a>
 
           <a href="#">
-            <div className="h-[400px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card"></div>
+            <div className="h-[350px] w-[350px] rounded-lg flex flex-col px-[2em] blog-card"></div>
           </a>
 
           <a href="#">
-            <div className="h-[400px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card"></div>
+            <div className="h-[350px] w-[350px] rounded-lg flex flex-col px-[2em] blog-card"></div>
           </a>
         </div>
       </div>
