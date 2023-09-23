@@ -22,12 +22,13 @@ input, textarea{
 }
 
 .div-form, .div-left{
-  box-shadow: -7px 7px 11px #202327,
-                7px -7px 11px #121315;
+  box-shadow:  -11px 11px 8px #141518,
+             11px -11px 8px #1e2124;
 }
 
 .div-left p, h2{
   color: #878e99;
+  font-size: 20px;
 }
 .div-form label{
   color: #878e99;
@@ -39,5 +40,31 @@ input, textarea{
   background: linear-gradient(225deg, #1b1d20, #17181b);
   box-shadow:  -9px 9px 11px #15171a,
                9px -9px 11px #1d1f23;
+}
+
+.resume{
+  background: linear-gradient(225deg, #1b1d20, #17181b);
+  box-shadow:  -11px 11px 26px #141518,
+             11px -11px 26px #1e2124;
+}
+
+.skill h2{
+  color: #E2024E;
+}
+
+.skill h1{
+  color: #878e99;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.skill .div-skill{
+  box-shadow: inset -11px 11px 0px #0a0b0c,
+              inset 11px -11px 0px #282b30;
+}
+
+.btn-cv{
+  box-shadow: -11px 11px 18px #0a0b0c,
+             11px -11px 18px #282b30;
 }
 
