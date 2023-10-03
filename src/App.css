@@ -58,9 +58,14 @@ input, textarea{
   font-weight: bold;
 }
 
+.skill p{
+  color:#878e99;
+  font-size: 15px;
+}
+
 .skill .div-skill{
-  box-shadow: inset -11px 11px 0px #0a0b0c,
-              inset 11px -11px 0px #282b30;
+  box-shadow: inset -11px 11px 32px #040405,
+            inset 11px -11px 32px #101213;
 }
 
 .btn-cv{

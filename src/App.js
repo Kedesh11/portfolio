@@ -4,17 +4,55 @@ import Button from "./components/Button";
 import Input from "./components/Input";
 
 export default function App() {
-  return(
+  return (
     <>
-    {/* nav bar */}
-      <Nav className="flex gap-5 justify-around text-white items-center py-[2em] "/>
+      {/* nav bar */}
+      <nav className="flex justify-center items-center justify-between py-[.5em] mt-[1em]">
+        <div className="w-[100px] h-[100px]">
+          <img src="/profile.jpg" className="rounded-full" />
+        </div>
+        <div class="hidden space-x-8 lg:flex">
+          <ul className="flex gap-10">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Testimonial</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contatcs</a></li>
+          </ul>
+        </div>
+        <div class="flex lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-10 h-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </div>
+        <Button className="py-[1em] px-[3em] rounded-lg bg-[#202327] text-[#E2024E] buy hidden lg:flex" title="Download CV" />
+      </nav>
 
-      {/* DO */}
+      {/* Section of biography */}
+      <div></div>
+
+      {/* WHAT I DO */}
+      <div className="w-[90%] h-[1px] bg-[#121415] my-[3em] mx-auto"></div>
       <div>
         <h3 className="text-[#E2024E] flex justify-center">FEATURES</h3>
         <h1 className="text-[#878e99] text-6xl flex justify-center font-bold">WHAT I DO</h1>
-        <div className="grid grid-cols-3 my-[3em] gap-10">
-        <a href="#">
+        <div className="grid gap-10 my-[3em] sm:grid-cols md:grid-cols-2 lg:grid-cols-3">
+          <a href="#">
             <div className="h-[350px] w-[350px] rounded-lg flex flex-col px-[2em] blog-card"></div>
           </a>
 
@@ -45,17 +83,19 @@ export default function App() {
       <div>
         <h3 className="text-[#E2024E] flex justify-center my-[1em]">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h3>
         <h1 className="text-[#c4cfde] text-6xl flex justify-center font-bold">My Portfolio</h1>
-        <div className="grid grid-cols-3 justify-between my-[3em] gap-10">
-        <a href="#">
+        <div className="grid gap-10 sm:grid-cols md:grid-cols-2 lg:grid-cols-3 lg:justify-between my-[3em] ">
+          <a href="#">
             <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
               <div className="h-[60%] flex items-center justify-center">
-                <div className="h-[80%] w-full bg-white rounded-lg"></div>
+                <div className="h-[80%] w-full bg-white rounded-lg">
+                    <img src = "/portfolio1.jpg" className="rounded-lg"/>
+                </div>
               </div>
               <div className="h-[40%]">
                 <div className="flex justify-between my-[1em]">
                   <p className="text-[#E2024E]">GALLERY</p>
                   <div className="flex gap-5 items-center">
-                    <img src="./assets/favorite.png" height={100}/>
+                    <img src="./favorite.png" height={100} />
                     <p className="text-[#c4cfde]">376</p>
                   </div>
                 </div>
@@ -68,13 +108,15 @@ export default function App() {
           <a href="#">
             <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
               <div className="h-[60%] flex items-center justify-center">
-                <div className="h-[80%] w-full bg-white rounded-lg"></div>
+                <div className="h-[80%] w-full bg-white rounded-lg">
+                  <img src = "/portfolio2.jpg" className="rounded-lg"/>
+                </div>
               </div>
               <div className="h-[40%]">
                 <div className="flex justify-between my-[1em]">
                   <p className="text-[#E2024E]">VIDEO</p>
                   <div className="flex gap-5 items-center">
-                    <img src="./assets/favorite.png" height={100}/>
+                    <img src="./favorite.png" height={100} />
                     <p className="text-[#c4cfde]">320</p>
                   </div>
                 </div>
@@ -87,13 +129,15 @@ export default function App() {
           <a href="#">
             <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
               <div className="h-[60%] flex items-center justify-center">
-                <div className="h-[80%] w-full bg-white rounded-lg"></div>
+                <div className="h-[80%] w-full bg-white rounded-lg">
+                  <img src = "/portfolio3.jpg" className="rounded-lg"/>
+                </div>
               </div>
               <div className="h-[40%]">
                 <div className="flex justify-between my-[1em]">
                   <p className="text-[#E2024E]">EXTERNAL LINK</p>
                   <div className="flex gap-5 items-center">
-                    <img src="./assets/favorite.png" height={100}/>
+                    <img src="./favorite.png" height={100} />
                     <p className="text-[#c4cfde]">176</p>
                   </div>
                 </div>
@@ -106,13 +150,15 @@ export default function App() {
           <a href="#">
             <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
               <div className="h-[60%] flex items-center justify-center">
-                <div className="h-[80%] w-full bg-white rounded-lg"></div>
+                <div className="h-[80%] w-full bg-white rounded-lg">
+                  <img src = "/portfolio4.jpg" className="rounded-lg"/>
+                </div>
               </div>
               <div className="h-[40%]">
                 <div className="flex justify-between my-[1em]">
                   <p className="text-[#E2024E]">IMAGE</p>
                   <div className="flex gap-5 items-center">
-                    <img src="./assets/favorite.png" height={100}/>
+                    <img src="./favorite.png" height={100} />
                     <p className="text-[#c4cfde]">76</p>
                   </div>
                 </div>
@@ -125,13 +171,15 @@ export default function App() {
           <a href="#">
             <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
               <div className="h-[60%] flex items-center justify-center">
-                <div className="h-[80%] w-full bg-white rounded-lg"></div>
+                <div className="h-[80%] w-full bg-white rounded-lg">
+                  <img src = "/portfolio5.jpg" className="rounded-lg"/>
+                </div>
               </div>
               <div className="h-[40%]">
                 <div className="flex justify-between my-[1em]">
                   <p className="text-[#E2024E]">GALLERY</p>
                   <div className="flex gap-5 items-center">
-                    <img src="./assets/favorite.png" height={100}/>
+                    <img src="./favorite.png" height={100} />
                     <p className="text-[#c4cfde]">376</p>
                   </div>
                 </div>
@@ -144,13 +192,15 @@ export default function App() {
           <a href="#">
             <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
               <div className="h-[60%] flex items-center justify-center">
-                <div className="h-[80%] w-full bg-white rounded-lg"></div>
+                <div className="h-[80%] w-full bg-white rounded-lg">
+                  <img src = "/portfolio6.jpg" className="rounded-lg"/>
+                </div>
               </div>
               <div className="h-[40%]">
                 <div className="flex justify-between my-[1em]">
                   <p className="text-[#E2024E]">STANDARD</p>
                   <div className="flex gap-5 items-center">
-                    <img src="./assets/favorite.png" height={100}/>
+                    <img src="./favorite.png" height={100} />
                     <p className="text-[#c4cfde]">450</p>
                   </div>
                 </div>
@@ -166,18 +216,18 @@ export default function App() {
 
       <div className="w-[90%] h-[1px] bg-[#121415] my-[3em] mx-auto"></div>
       <div>
-          <h1 className="text-6xl font-bold text-[#878e99] flex justify-center">My Resume</h1>
-        <div className="flex my-[2em] justify-between">
-              <Button className="text-[#c4cfde] hover:text-[#E2024E] py-[2em] px-[7em] rounded-lg resume" title="Education"/>
-          
-              <Button className="text-[#c4cfde] hover:text-[#E2024E] py-[2em] px-[7em] rounded-lg resume" title="Professional Skills"/>
+        <h1 className="text-6xl font-bold text-[#878e99] flex justify-center">My Resume</h1>
+        <div className="flex flex-col gap-5 lg:flex justify-between my-[2em]">
+          <Button className="text-[#c4cfde] hover:text-[#E2024E] py-[2em] px-[7em] rounded-lg resume" title="Education" />
 
-              <Button className="text-[#c4cfde] hover:text-[#E2024E] py-[2em] px-[7em] rounded-lg resume" title="Experience"/>
+          <Button className="text-[#c4cfde] hover:text-[#E2024E] py-[2em] px-[7em] rounded-lg resume" title="Professional Skills" />
 
-              <Button className="text-[#c4cfde] hover:text-[#E2024E] py-[2em] px-[7em] rounded-lg resume" title="Interview"/>
+          <Button className="text-[#c4cfde] hover:text-[#E2024E] py-[2em] px-[7em] rounded-lg resume" title="Experience" />
+
+          <Button className="text-[#c4cfde] hover:text-[#E2024E] py-[2em] px-[7em] rounded-lg resume" title="Interview" />
         </div>
 
-        <div className="flex justify-between skill">
+        <div className="flex sm:flex-col sm: md:flex-row  justify-between skill">
           <div className="w-[45%]">
             <h2>Features</h2>
             <h1>Design Skill</h1>
@@ -224,43 +274,43 @@ export default function App() {
             <h1>Development Skills</h1>
             <div className="flex flex-col gap-5">
               <div>
-                  <p>HTML</p>
-                  <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
-                    <div className="h-full w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
-                  </div>
+                <p>HTML</p>
+                <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
+                  <div className="h-full w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
                 </div>
+              </div>
 
-                <div>
-                  <p>REACT</p>
-                  <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
-                    <div className="h-full w-[90%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
-                  </div>
+              <div>
+                <p>REACT</p>
+                <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
+                  <div className="h-full w-[90%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
                 </div>
+              </div>
 
-                <div>
-                  <p>NODEJS</p>
-                  <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
-                    <div className="h-full w-[70%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
-                  </div>
+              <div>
+                <p>NODEJS</p>
+                <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
+                  <div className="h-full w-[70%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
                 </div>
+              </div>
 
-                <div>
-                  <p>JAVASCRIPT</p>
-                  <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
-                    <div className="h-full w-[60%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
-                  </div>
+              <div>
+                <p>JAVASCRIPT</p>
+                <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
+                  <div className="h-full w-[60%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
                 </div>
+              </div>
 
-                <div>
-                  <p>ANGULAR</p>
-                  <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
-                    <div className="h-full w-[50%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
-                  </div>
+              <div>
+                <p>ANGULAR</p>
+                <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
+                  <div className="h-full w-[50%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
-        <Button className="w-full py-[2em] my-[2em] text-[#E2024E] rounded-lg font-bold btn-cv" title="DOWNLOAD CV"/>
+        <Button className="w-full py-[2em] my-[2em] text-[#E2024E] rounded-lg font-bold btn-cv" title="DOWNLOAD CV" />
       </div>
 
       {/* Section blog */}
@@ -271,12 +321,14 @@ export default function App() {
           <h1 className="text-6xl text-[#c4cfde] font-bold">My Blog</h1>
         </div>
         {/* Blog card */}
-        
-        <div className="grid grid-cols-3 justify-between">
+
+        <div className="grid gap-10 md:grid-cols-2 sm:grid-cols lg:grid-cols-3 justify-between">
           <a href="#">
             <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
               <div className="h-[60%] flex items-center justify-center">
-                <div className="h-[80%] w-full bg-white rounded-lg"></div>
+                <div className="h-[80%] w-full bg-white rounded-lg">
+                  <img src = "/blog1.jpg" className="rounded-lg"/>
+                </div>
               </div>
               <div className="h-[40%]">
                 <div className="flex justify-between my-[1em]">
@@ -290,11 +342,13 @@ export default function App() {
               </div>
             </div>
           </a>
-          
+
           <a href="#">
             <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
               <div className="h-[60%] flex items-center justify-center">
-                <div className="h-[80%] w-full bg-white rounded-lg"></div>
+                <div className="h-[80%] w-full bg-white rounded-lg">
+                  <img src = "/blog2.jpg" className="rounded-lg"/>
+                </div>
               </div>
               <div className="h-[40%]">
                 <div className="flex justify-between my-[1em]">
@@ -308,11 +362,13 @@ export default function App() {
               </div>
             </div>
           </a>
-          
+
           <a href="#">
             <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
               <div className="h-[60%] flex items-center justify-center">
-                <div className="h-[80%] w-full bg-white rounded-lg"></div>
+                <div className="h-[80%] w-full bg-white rounded-lg">
+                  <img src = "/blog3.jpg" className="rounded-lg"/>
+                </div>
               </div>
               <div className="h-[40%]">
                 <div className="flex justify-between my-[1em]">
@@ -326,7 +382,27 @@ export default function App() {
               </div>
             </div>
           </a>
-          
+
+          <a href="#">
+            <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
+              <div className="h-[60%] flex items-center justify-center">
+                <div className="h-[80%] w-full bg-white rounded-lg">
+                  <img src = "/blog3.jpg" className="rounded-lg"/>
+                </div>
+              </div>
+              <div className="h-[40%]">
+                <div className="flex justify-between my-[1em]">
+                  <p className="text-[#E2024E]">Development</p>
+                  <div>
+                    <p className="text-[#c4cfde]">4 min read</p>
+                  </div>
+                </div>
+                <p className="text-[#c4cfde]">Lorem ipsum dolor sit amet consectetur</p>
+                <p className="text-[#c4cfde]">Lorem ipsum dolor sit amet consectetur</p>
+              </div>
+            </div>
+          </a>
+
         </div>
       </div>
 
@@ -341,13 +417,13 @@ export default function App() {
         <div className="flex justify-between">
           {/* Section left  */}
           <div className="px-[3em] w-[30%] h-[700px] rounded-lg flex flex-col justify-between py-[4em] div-left">
-            <div className="w-[100%] h-[200px] mx-auto bg-white rounded-lg">
-              <img src="./assets/profile.jpg"/>
+            <div className="w-[200px] h-[200px] mx-auto bg-white rounded-lg rounded-full">
+              <img src="./profile.jpg" className="rounded-full h-full w-full" />
             </div>
             <div className=" my-[1em]">
               <h1 className="text-xl text-white my-[1em]">Marly MOUTSINGA</h1>
               <h2 className="my-[1em]">Full Stack Developper</h2>
-              <p>Lorem ipsum dolor sit amet consectetur<br/> sed do eiusmod tempor elit</p>
+              <p>Lorem ipsum dolor sit amet consectetur<br /> sed do eiusmod tempor elit</p>
               <p>Phone: 213412434</p>
               <p>Email: manprobleme@gmail.com</p>
             </div>
@@ -363,21 +439,21 @@ export default function App() {
               <div className="flex justify-between">
                 <div className="flex flex-col w-[45%]">
                   <label htmlFor="name" className="">YOUR NAME</label>
-                  <Input type = "text" className ="bg-[#191B1E] w-full h-[3em] rounded-lg" required/>
+                  <Input type="text" className="bg-[#191B1E] w-full h-[3em] rounded-lg" required />
                 </div>
                 <div className="flex flex-col w-[45%]">
                   <label htmlFor="number">PHONE NUMBER</label>
-                  <Input type = "text" className ="bg-[#191B1E] w-full h-[3em] rounded-lg" required/>
+                  <Input type="text" className="bg-[#191B1E] w-full h-[3em] rounded-lg" required />
                 </div>
               </div>
               <div className="flex flex-col">
                 <label tmlFor="email">EMAIL</label>
-                <Input type="email" name = "email" className="bg-[#191B1E] w-full h-[3em] rounded-lg" required/>
+                <Input type="email" name="email" className="bg-[#191B1E] w-full h-[3em] rounded-lg" required />
               </div>
 
               <div className="flex flex-col">
                 <label htmlFor="subject">SUBJECT</label>
-                <Input type="text" name = "subject" className="bg-[#191B1E] h-[4em] rounded-lg " required/>
+                <Input type="text" name="subject" className="bg-[#191B1E] h-[4em] rounded-lg " required />
               </div>
 
               <div className="flex flex-col">
@@ -394,14 +470,9 @@ export default function App() {
 
       {/* Footer */}
       <div className="w-[90%] h-[1px] bg-[#121415] my-[2em] mx-auto"></div>
-      <div className="flex justify-between my-[2em]">
+      <div className="flex justify-between">
         <div>
-          <div>
-            <img src="./assets/profile.jpg" alt="Marly"/>
-          </div>
-          <div>
-            <Button/>
-          </div>
+          
         </div>
 
         <div>
