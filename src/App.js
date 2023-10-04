@@ -1,5 +1,4 @@
 import "./App.css";
-import Nav from "./components/Nav";
 import Button from "./components/Button";
 import Input from "./components/Input";
 
@@ -13,11 +12,11 @@ export default function App() {
         </div>
         <div class="hidden space-x-8 lg:flex">
           <ul className="flex gap-10">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contatcs</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contatcs</a></li>
           </ul>
         </div>
         <div class="flex lg:hidden">
@@ -57,39 +56,39 @@ export default function App() {
         <h1 className="text-[#878e99] text-2xl lg:text-6xl flex justify-center font-bold">WHAT I DO</h1>
         <div className="grid gap-10 my-[3em] sm:grid-cols md:grid-cols-2 lg:grid-cols-3">
           <a href="#">
-            <div className="h-[350px] w-[350px] rounded-lg flex flex-col px-[2em] blog-card"></div>
+            <div className=" h-[200px] w-[250px] rounded-lg flex flex-col px-[2em] lg:h-[350px] lg:w-[350px] blog-card"></div>
           </a>
 
           <a href="#">
-            <div className="h-[350px] w-[350px] rounded-lg flex flex-col px-[2em] blog-card"></div>
+            <div className=" h-[200px] w-[250px] rounded-lg flex flex-col px-[2em] lg:h-[350px] lg:w-[350px] blog-card"></div>
           </a>
 
           <a href="#">
-            <div className="h-[350px] w-[350px] rounded-lg flex flex-col px-[2em] blog-card"></div>
+            <div className="h-[200px] w-[250px] rounded-lg flex flex-col px-[2em] lg:h-[350px] lg:w-[350px] blog-card"></div>
           </a>
 
           <a href="#">
-            <div className="h-[350px] w-[350px] rounded-lg flex flex-col px-[2em] blog-card"></div>
+            <div className="h-[200px] w-[250px] rounded-lg flex flex-col px-[2em] lg:h-[350px] lg:w-[350px] blog-card"></div>
           </a>
 
           <a href="#">
-            <div className="h-[350px] w-[350px] rounded-lg flex flex-col px-[2em] blog-card"></div>
+            <div className="h-[200px] w-[250px] rounded-lg flex flex-col px-[2em] lg:h-[350px] lg:w-[350px] blog-card"></div>
           </a>
 
           <a href="#">
-            <div className="h-[350px] w-[350px] rounded-lg flex flex-col px-[2em] blog-card"></div>
+            <div className="h-[200px] w-[250px] rounded-lg flex flex-col px-[2em] lg:h-[350px] lg:w-[350px] blog-card"></div>
           </a>
         </div>
       </div>
 
       {/* Section Portfolio */}
-      <div className="w-[90%] h-[1px] bg-[#121415] my-[3em] mx-auto"></div>
+      <div className="w-[90%] h-[1px] bg-[#121415] my-[3em] mx-auto" id="portfolio"></div>
       <div>
         <h3 className="hidden lg:text-[#E2024E] lg:flex lg:justify-center lg:my-[1em] ">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h3>
         <h1 className="text-[#c4cfde] text-2xl lg:text-6xl flex justify-center font-bold">My Portfolio</h1>
         <div className="grid gap-10 sm:grid-cols md:grid-cols-2 lg:grid-cols-3 lg:justify-between my-[3em] ">
           <a href="#">
-            <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
+            <div className="h-[350px] w-[300px] text-sm lg:h-[500px] lg:w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
               <div className="h-[60%] flex items-center justify-center">
                 <div className="h-[80%] w-full bg-white rounded-lg">
                   <img src="/portfolio1.jpg" className="rounded-lg" />
@@ -110,7 +109,7 @@ export default function App() {
           </a>
 
           <a href="#">
-            <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
+            <div className="h-[350px] w-[300px] text-sm lg:h-[500px] lg:w-[400px]  rounded-lg flex flex-col px-[2em] blog-card">
               <div className="h-[60%] flex items-center justify-center">
                 <div className="h-[80%] w-full bg-white rounded-lg">
                   <img src="/portfolio2.jpg" className="rounded-lg" />
@@ -131,7 +130,7 @@ export default function App() {
           </a>
 
           <a href="#">
-            <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
+            <div className="h-[350px] w-[300px] text-sm lg:h-[500px] lg:w-[400px]  rounded-lg flex flex-col px-[2em] blog-card">
               <div className="h-[60%] flex items-center justify-center">
                 <div className="h-[80%] w-full bg-white rounded-lg">
                   <img src="/portfolio3.jpg" className="rounded-lg" />
@@ -152,7 +151,7 @@ export default function App() {
           </a>
 
           <a href="#">
-            <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
+            <div className="h-[350px] w-[300px] text-sm lg:h-[500px] lg:w-[400px]  rounded-lg flex flex-col px-[2em] blog-card">
               <div className="h-[60%] flex items-center justify-center">
                 <div className="h-[80%] w-full bg-white rounded-lg">
                   <img src="/portfolio4.jpg" className="rounded-lg" />
@@ -173,7 +172,7 @@ export default function App() {
           </a>
 
           <a href="#">
-            <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
+            <div className="h-[350px] w-[300px] text-sm lg:h-[500px] lg:w-[400px]  rounded-lg flex flex-col px-[2em] blog-card">
               <div className="h-[60%] flex items-center justify-center">
                 <div className="h-[80%] w-full bg-white rounded-lg">
                   <img src="/portfolio5.jpg" className="rounded-lg" />
@@ -194,7 +193,7 @@ export default function App() {
           </a>
 
           <a href="#">
-            <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
+            <div className="h-[350px] w-[300px] text-sm lg:h-[500px] lg:w-[400px]  rounded-lg flex flex-col px-[2em] blog-card">
               <div className="h-[60%] flex items-center justify-center">
                 <div className="h-[80%] w-full bg-white rounded-lg">
                   <img src="/portfolio6.jpg" className="rounded-lg" />
@@ -218,7 +217,7 @@ export default function App() {
 
       {/* Section Resume */}
 
-      <div className="w-[90%] h-[1px] bg-[#121415] my-[3em] mx-auto"></div>
+      <div className="w-[90%] h-[1px] bg-[#121415] my-[3em] mx-auto" id="resume"></div>
       <div>
         <h1 className=" text-2xl lg:text-6xl font-bold text-[#878e99] flex justify-center">My Resume</h1>
 
@@ -418,7 +417,7 @@ export default function App() {
 
       {/* Section blog */}
       <div className="w-[90%] h-[1px] bg-[#121415] my-[3em] mx-auto"></div>
-      <div>
+      <div id="blog">
         <div className="flex flex-col justify-center items-center gap-5 my-[3em]">
           <h3 className="text-xl text-[#E2024E]">VISIT MY BLOG  AND KEEP  YOUR FEEDBACK</h3>
           <h1 className="text-2xl lg:text-6xl text-[#c4cfde] font-bold">My Blog</h1>
@@ -427,7 +426,7 @@ export default function App() {
 
         <div className="grid gap-10 md:grid-cols-2 sm:grid-cols lg:grid-cols-3 justify-between">
           <a href="#">
-            <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
+            <div className="h-[350px] w-[300px] text-sm lg:h-[500px] lg:w-[400px] lg:text-xl  rounded-lg flex flex-col px-[2em] blog-card">
               <div className="h-[60%] flex items-center justify-center">
                 <div className="h-[80%] w-full bg-white rounded-lg">
                   <img src="/blog1.jpg" className="rounded-lg" />
@@ -447,7 +446,7 @@ export default function App() {
           </a>
 
           <a href="#">
-            <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
+            <div className="h-[350px] w-[300px] text-sm lg:h-[500px] lg:w-[400px] lg:text-xl   rounded-lg flex flex-col px-[2em] blog-card">
               <div className="h-[60%] flex items-center justify-center">
                 <div className="h-[80%] w-full bg-white rounded-lg">
                   <img src="/blog2.jpg" className="rounded-lg" />
@@ -467,7 +466,7 @@ export default function App() {
           </a>
 
           <a href="#">
-            <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
+            <div className="h-[350px] w-[300px] text-sm lg:h-[500px] lg:w-[400px] lg:text-xl  rounded-lg flex flex-col px-[2em] blog-card">
               <div className="h-[60%] flex items-center justify-center">
                 <div className="h-[80%] w-full bg-white rounded-lg">
                   <img src="/blog3.jpg" className="rounded-lg" />
@@ -487,7 +486,7 @@ export default function App() {
           </a>
 
           <a href="#">
-            <div className="h-[500px] w-[400px] rounded-lg flex flex-col px-[2em] blog-card">
+            <div className="h-[350px] w-[300px] text-sm lg:h-[500px] lg:w-[400px] lg:text-xl rounded-lg flex flex-col px-[2em] blog-card">
               <div className="h-[60%] flex items-center justify-center">
                 <div className="h-[80%] w-full bg-white rounded-lg">
                   <img src="/blog3.jpg" className="rounded-lg" />
@@ -512,7 +511,7 @@ export default function App() {
       {/* Contact section */}
       <div className="w-[90%] h-[1px] bg-[#121415] my-[3em] mx-auto"></div>
       <div>
-        <div className="flex flex-col justify-center items-center my-[3em]">
+        <div className="flex flex-col justify-center items-center my-[3em]" id="contact">
           <h4 className="text-[#E2024E] text-xl my-[1em]">CONTACT</h4>
           <h1 className="text-2xl lg:text-6xl text-[#c4cfde] font-bold ">Contact With Me</h1>
         </div>
