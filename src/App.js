@@ -631,45 +631,8 @@ export default function App() {
 
 
       {/* Footer */}
-      <div className="w-[90%] h-[1px] bg-[#121415] my-[2em] mx-auto"></div>
-      <div className="flex justify-between">
-        <div>
-
-        </div>
-
-        <div>
-          <h1 className="text-[#FA024E] text-2xl">Quick Link</h1>
-          <ul className="text-white gap-10">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h1 className="text-[#FA024E]  text-2xl">Ressources</h1>
-          <ul className="text-white gap-10">
-            <li><a href="#">Authentification</a></li>
-            <li><a href="#">System Status</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Over Right</a></li>
-          </ul>
-        </div>
-        <div>
-          <h1 className="text-[#FA024E] text-2xl">Developers</h1>
-          <ul className="gap-10 text-white">
-            <li><a href="#">Documentation</a></li>
-            <li><a href="#">Authentification</a></li>
-            <li><a href="#">API Reference</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Open Source</a></li>
-          </ul>
-        </div>
-        {/* Picture and button */}
-        <div></div>
-      </div>
+      <div className=""></div>
+      
     </>
   )
 }
