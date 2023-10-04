@@ -1,75 +1,92 @@
-*{
+* {
   margin: 0;
   list-style: none;
 }
 
-body{
-  background-color: rgb(33,36,40);
+body {
+  background-color: rgb(33, 36, 40);
   padding-left: 2em;
   padding-right: 2em;
 }
 
-input, textarea{
+.biography {
+  border-radius: 10px;
+  /* background: ; */
+  box-shadow: 10px 10px 20px #111214,
+    -10px -10px 20px #1d1e22;
+}
+
+.social {
+  border-radius: 10px;
+  background: linear-gradient(145deg, #1f2125, #24282c);
+  box-shadow: 17px 17px 41px #0e0f10,
+    -17px -17px 41px #363b42;
+}
+
+input,
+textarea {
   box-shadow: inset -5px 5px 0px #0a0b0c,
-              inset 5px -5px 0px #282b30;
+    inset 5px -5px 0px #282b30;
   border-color: #191B1E;
 }
 
-.btn-form{
+.btn-form {
   box-shadow: -7px 7px 11px #121315,
-              7px -7px 11px #202327;
+    7px -7px 11px #202327;
   color: #878e99;
 }
 
-.div-form, .div-left{
-  box-shadow:  -11px 11px 8px #141518,
-             11px -11px 8px #1e2124;
+.div-form,
+.div-left {
+  box-shadow: 20px 20px 60px #141518,
+    -20px -20px 60px #1e2124;
 }
 
-.div-left p, h2{
+.div-left p,
+h2 {
   color: #878e99;
   font-size: 20px;
 }
-.div-form label{
+
+.div-form label {
   color: #878e99;
   margin-bottom: 10px;
   font-size: small;
 }
 
-.blog-card{
+.blog-card {
   background: linear-gradient(225deg, #1b1d20, #17181b);
-  box-shadow:  -9px 9px 11px #15171a,
-               9px -9px 11px #1d1f23;
+  box-shadow: -9px 9px 11px #15171a,
+    9px -9px 11px #1d1f23;
 }
 
-.resume{
+.resume {
   background: linear-gradient(225deg, #1b1d20, #17181b);
-  box-shadow:  -11px 11px 26px #141518,
-             11px -11px 26px #1e2124;
+  box-shadow: -11px 11px 26px #141518,
+    11px -11px 26px #1e2124;
 }
 
-.skill h2{
+.skill h2 {
   color: #E2024E;
 }
 
-.skill h1{
+.skill h1 {
   color: #878e99;
   font-size: 40px;
   font-weight: bold;
 }
 
-.skill p{
-  color:#878e99;
+.skill p {
+  color: #878e99;
   font-size: 15px;
 }
 
-.skill .div-skill{
+.skill .div-skill {
   box-shadow: inset -11px 11px 32px #040405,
-            inset 11px -11px 32px #101213;
+    inset 11px -11px 32px #101213;
 }
 
-.btn-cv{
+.btn-cv {
   box-shadow: -11px 11px 18px #0a0b0c,
-             11px -11px 18px #282b30;
+    11px -11px 18px #282b30;
 }
-
