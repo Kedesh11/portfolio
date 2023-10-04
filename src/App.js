@@ -85,7 +85,7 @@ export default function App() {
       {/* Section Portfolio */}
       <div className="w-[90%] h-[1px] bg-[#121415] my-[3em] mx-auto"></div>
       <div>
-        <h3 className="text-[#E2024E] flex justify-center my-[1em]">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h3>
+        <h3 className="hidden lg:text-[#E2024E] lg:flex lg:justify-center lg:my-[1em] ">VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h3>
         <h1 className="text-[#c4cfde] text-2xl lg:text-6xl flex justify-center font-bold">My Portfolio</h1>
         <div className="grid gap-10 sm:grid-cols md:grid-cols-2 lg:grid-cols-3 lg:justify-between my-[3em] ">
           <a href="#">
@@ -244,10 +244,10 @@ export default function App() {
           <Button className="text-[#c4cfde] hover:text-[#E2024E] py-[2em] px-[7em] rounded-lg resume" title="Interview" />
         </div>
 
-        <div className="flex sm:flex-col sm: md:flex-row  justify-between skill">
+        <div className="hidden lg:flex  lg:justify-between my-[3em]  skill">
           <div className="w-[45%]">
-            <h2>Features</h2>
-            <h1>Design Skill</h1>
+            <h2 className="my-[.5em]">Features</h2>
+            <h1 className="text-[#878e99] font-bold text-4xl my-[.5em]">Design Skill</h1>
             <div className="flex flex-col gap-5">
               <div>
                 <p>PHOTOSHOP</p>
@@ -287,8 +287,94 @@ export default function App() {
           </div>
 
           <div className="w-[45%]">
+            <h2 className="flex justify-start my-[.5em]">Features</h2>
+            <h1 className="text-[#878e99] font-bold text-4xl my-[.5em]">Development Skills</h1>
+            <div className="flex flex-col gap-5">
+              <div>
+                <p>HTML</p>
+                <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
+                  <div className="h-full w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
+                </div>
+              </div>
+
+              <div>
+                <p>REACT</p>
+                <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
+                  <div className="h-full w-[90%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
+                </div>
+              </div>
+
+              <div>
+                <p>NODEJS</p>
+                <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
+                  <div className="h-full w-[70%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
+                </div>
+              </div>
+
+              <div>
+                <p>JAVASCRIPT</p>
+                <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
+                  <div className="h-full w-[60%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
+                </div>
+              </div>
+
+              <div>
+                <p>ANGULAR</p>
+                <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
+                  <div className="h-full w-[50%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* responsive mobile and matlab */}
+
+        <div className="lg:hidden  skill">
+          <div className="w-full my-[.5em]">
+            <h2 className="my-[.5em]">Features</h2>
+            <h1 className="text-[#878e99] font-bold text-xl my-[5em]">Design Skill</h1>
+            <div className="flex flex-col gap-5">
+              <div>
+                <p>PHOTOSHOP</p>
+                <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
+                  <div className="h-full w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
+                </div>
+              </div>
+
+              <div>
+                <p>FIGMA</p>
+                <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
+                  <div className="h-full w-[95%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
+                </div>
+              </div>
+
+              <div>
+                <p>ADOBE XD.</p>
+                <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
+                  <div className="h-full w-[60%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
+                </div>
+              </div>
+
+              <div>
+                <p>CANVAS</p>
+                <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
+                  <div className="h-full w-[45%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
+                </div>
+              </div>
+
+              <div>
+                <p>DISIGN</p>
+                <div className="div-skill  w-full h-[8px] bg-[#202327] rounded-lg">
+                  <div className="h-full w-[90%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full my-[3em]">
             <h2 className="flex justify-start">Features</h2>
-            <h1>Development Skills</h1>
+            <h1 className="text-[#878e99] font-bold text-xl">Development Skills</h1>
             <div className="flex flex-col gap-5">
               <div>
                 <p>HTML</p>
@@ -433,11 +519,11 @@ export default function App() {
 
         <div>
           {/* responsive of desktop */}
-          <div className="hidden lg:flex lg:justify-between">
+          <div className="hidden lg:flex lg:justify-between my-[2em ]">
             {/* Section left  */}
-            <div className="px-[3em] w-[30%] h-[700px] rounded-lg flex flex-col justify-between py-[4em] div-left">
-              <div className="w-[200px] h-[200px] mx-auto bg-white rounded-lg rounded-full">
-                <img src="./profile.jpg" className="rounded-full h-full w-full" />
+            <div className="p-[3em] w-[30%] h-[700px] rounded-lg flex flex-col justify-between div-left">
+              <div className="w-[80%] h-[300px] mx-auto bg-white rounded-lg rounded-full">
+                <img src="./profile.jpg" className="rounded-lg h-full w-full" />
               </div>
               <div className=" my-[1em]">
                 <h1 className="text-xl text-white my-[1em]">Marly MOUTSINGA</h1>
@@ -448,7 +534,11 @@ export default function App() {
               </div>
               <div>
                 <h1 className="text-[#878e99]">FIND WITH ME</h1>
-                <div className="flex justify-between"></div>
+                <div className="flex justify-between">
+                  <div className="w-[50px] h-[50px] bg-white]">
+                    <img src="/facebook.png" />
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -509,14 +599,14 @@ export default function App() {
             {/* Section right */}
             <div className="w-full rounded-lg p-[2em] div-form">
               <form className="flex flex-col justify-between gap-10">
-                  <div className="flex flex-col w-full">
-                    <label htmlFor="name" className="">YOUR NAME</label>
-                    <Input type="text" className="bg-[#191B1E] w-full h-[3em] rounded-lg" required />
-                  </div>
-                  <div className="flex flex-col w-full">
-                    <label htmlFor="number">PHONE NUMBER</label>
-                    <Input type="text" className="bg-[#191B1E] w-full h-[3em] rounded-lg" required />
-                  </div>
+                <div className="flex flex-col w-full">
+                  <label htmlFor="name" className="">YOUR NAME</label>
+                  <Input type="text" className="bg-[#191B1E] w-full h-[3em] rounded-lg" required />
+                </div>
+                <div className="flex flex-col w-full">
+                  <label htmlFor="number">PHONE NUMBER</label>
+                  <Input type="text" className="bg-[#191B1E] w-full h-[3em] rounded-lg" required />
+                </div>
                 <div className="flex flex-col">
                   <label tmlFor="email">EMAIL</label>
                   <Input type="email" name="email" className="bg-[#191B1E] w-full h-[3em] rounded-lg" required />
