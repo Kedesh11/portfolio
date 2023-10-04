@@ -41,7 +41,7 @@ export default function App() {
       {/* Section of biography */}
       <div className="my-40">
         <div className="lg:flex lg:justify-between">
-          <div className="w-[360px] h-full rounded-[10px] bg-[#17181b] biography my-[1em] flex justify-center ">
+          <div className="w-[300px] h-full rounded-[10px] bg-[#17181b] biography my-[1em] flex justify-center ">
             <div className="w-full h-[400px]  relative">
               <img src="/profile-removebg.png" className="width-[350] h-[500px] absolute bottom-1 z-10" />
             </div>
@@ -56,27 +56,27 @@ export default function App() {
         <h1 className="text-[#878e99] text-2xl lg:text-6xl flex justify-center font-bold">WHAT I DO</h1>
         <div className="grid gap-10 my-[3em] sm:grid-cols md:grid-cols-2 lg:grid-cols-3">
           <a href="#">
-            <div className=" h-[200px] w-[250px] rounded-lg flex flex-col px-[2em] lg:h-[350px] lg:w-[350px] blog-card"></div>
+            <div className=" h-[300px] w-[300px] rounded-lg flex flex-col px-[2em] lg:h-[350px] lg:w-[350px] blog-card"></div>
           </a>
 
           <a href="#">
-            <div className=" h-[200px] w-[250px] rounded-lg flex flex-col px-[2em] lg:h-[350px] lg:w-[350px] blog-card"></div>
+            <div className=" h-[300px] w-[300px] rounded-lg flex flex-col px-[2em] lg:h-[350px] lg:w-[350px] blog-card"></div>
           </a>
 
           <a href="#">
-            <div className="h-[200px] w-[250px] rounded-lg flex flex-col px-[2em] lg:h-[350px] lg:w-[350px] blog-card"></div>
+            <div className="h-[200px] w-[300px] rounded-lg flex flex-col px-[2em] lg:h-[350px] lg:w-[350px] blog-card"></div>
           </a>
 
           <a href="#">
-            <div className="h-[200px] w-[250px] rounded-lg flex flex-col px-[2em] lg:h-[350px] lg:w-[350px] blog-card"></div>
-          </a>
-
-          <a href="#">
-            <div className="h-[200px] w-[250px] rounded-lg flex flex-col px-[2em] lg:h-[350px] lg:w-[350px] blog-card"></div>
+            <div className="h-[300px] w-[300px] rounded-lg flex flex-col px-[2em] lg:h-[350px] lg:w-[350px] blog-card"></div>
           </a>
 
           <a href="#">
             <div className="h-[200px] w-[250px] rounded-lg flex flex-col px-[2em] lg:h-[350px] lg:w-[350px] blog-card"></div>
+          </a>
+
+          <a href="#">
+            <div className="h-[300px] w-[300px] rounded-lg flex flex-col px-[2em] lg:h-[350px] lg:w-[350px] blog-card"></div>
           </a>
         </div>
       </div>
