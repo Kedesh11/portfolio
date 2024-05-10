@@ -1,41 +1,41 @@
 import React from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { SiTailwindcss, SiPython, SiDjango, SiFlask } from "react-icons/si";
 const Media = () => {
   return (
     <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
         <div>
           <h2 className="text-base uppercase font-titleFont mb-4">
-            TROUVEZ MOI SUR
+            Find me on
           </h2>
           <div className="flex gap-4">
-            <span className="bannerIcon">
-              <FaFacebookF />
-            </span>
-            <span className="bannerIcon">
-              <FaTwitter />
-            </span>
-            <span className="bannerIcon">
-              <FaLinkedinIn />
-            </span>
+              <a href="https://www.facebook.com" target='blank' className="bannerIcon">
+                <FaFacebookF />
+              </a>
+              <a href="https://twitter.com" target='blank' className="bannerIcon">
+                <FaTwitter />
+              </a>
+              <a href="https://www.linkedin.com/in/sevan-kedesh-ikissa-pendy-aa8095255" target='blank' className="bannerIcon">
+                <FaLinkedinIn />
+              </a>
           </div>
         </div>
         <div>
           <h2 className="text-base uppercase font-titleFont mb-4">
-            Mes meilleures Competences
+            My best skills
           </h2>
           <div className="flex gap-4">
             <span className="bannerIcon">
-              <FaReact />
+              <SiPython />
             </span>
             <span className="bannerIcon">
-              <SiNextdotjs />
+              <SiDjango />
+            </span>
+            <span className="bannerIcon">
+              <SiFlask />
             </span>
             <span className="bannerIcon">
               <SiTailwindcss />
-            </span>
-            <span className="bannerIcon">
-              <SiFigma />
             </span>
           </div>
         </div>

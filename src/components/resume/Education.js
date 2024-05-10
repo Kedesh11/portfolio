@@ -17,28 +17,34 @@ const Education = () => {
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            title="BSc in Computer Science"
-            subTitle="University of DVI (2006 - 2010)"
-            result="3.90/4"
-            des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
+            title="Data Engineer (In Progress)"
+            subTitle="Africa TechUp Tout (ATUT) (27.04.2023 - 01.2025)"
+            result="Online()"
+            des="I develop skills in data extraction, processing and loading. As well as the tools allowing me to carry out my daily work well."
           />
           <ResumeCard
-            title="AS - Science & Information"
-            subTitle="SuperKing College (2001 - 2005)"
-            result="4.75/5"
-            des="Higher education is tertiary education leading to award of an academic degree. Higher education, also called post-secondary education."
+            title="Qwasar Silivon Valley"
+            subTitle="Python Full Stack Developer (05.05.2023 - 05.05.2024)"
+            result="Online (USA)"
+            des="I have developed strong technical and collaborative skills."
+          />
+          <ResumeCard
+            title="Udemy"
+            subTitle="Python Full Stack Developer (09.2022 - 03.12-2022)"
+            result="Online()"
+            des="It was a question for me to learn the Django framework."
           />
           <ResumeCard
             title="Secondary School Education"
-            subTitle="Kingstar Secondary School (1998 - 2000)"
-            result="5.00/5"
-            des="Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale."
+            subTitle="Omar Bongo National Technical High School (2019 - 2021)"
+            result="Gabon"
+            des="I had my specialty baccalaureate F3. Industrial Electricity and Industrial IT."
           />
         </div>
       </div>
       {/* part Two */}
 
-      <div>
+      {/* <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
           <h2 className="text-3xl md:text-4xl font-bold">Job Experience</h2>
@@ -63,7 +69,7 @@ const Education = () => {
             des="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
           />
         </div>
-      </div>
+      </div> */}
     </motion.div>
   );
 }

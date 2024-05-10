@@ -8,15 +8,15 @@ const Footer = () => {
       <div className="w-full h-full flex flex-col gap-8">
         <img className="w-32 rounded-full cover" src={profile} alt="profile" />
         <div className="flex gap-4">
-          <span className="bannerIcon">
-            <FaFacebookF />
-          </span>
-          <span className="bannerIcon">
-            <FaTwitter />
-          </span>
-          <span className="bannerIcon">
-            <FaLinkedinIn />
-          </span>
+            <a href="https://www.facebook.com" target='blank' className="bannerIcon">
+              <FaFacebookF />
+            </a>
+            <a href="https://twitter.com" target='blank' className="bannerIcon">
+              <FaTwitter />
+            </a>
+            <a href="https://www.linkedin.com/in/sevan-kedesh-ikissa-pendy-aa8095255" target='blank' className="bannerIcon">
+              <FaLinkedinIn />
+            </a>
         </div>
       </div>
       <div className="w-full h-full">

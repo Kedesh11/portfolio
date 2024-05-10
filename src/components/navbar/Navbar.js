@@ -73,18 +73,18 @@ const Navbar = () => {
               </ul>
               <div className="flex flex-col gap-4">
                 <h2 className="text-base uppercase font-titleFont mb-4">
-                  Trouvez moi sur
+                Find me on
                 </h2>
                 <div className="flex gap-4">
-                  <span className="bannerIcon">
+                  <a href="https://www.facebook.com" target='blank' className="bannerIcon">
                     <FaFacebookF />
-                  </span>
-                  <span className="bannerIcon">
+                  </a>
+                  <a href="https://twitter.com" target='blank' className="bannerIcon">
                     <FaTwitter />
-                  </span>
-                  <span className="bannerIcon">
+                  </a>
+                  <a href="https://www.linkedin.com/in/sevan-kedesh-ikissa-pendy-aa8095255" target='blank' className="bannerIcon">
                     <FaLinkedinIn />
-                  </span>
+                  </a>
                 </div>
               </div>
               <span

@@ -8,36 +8,36 @@ const ContactLeft = () => {
       <img
         className="w-full h-64 object-cover rounded-lg mb-2"
         src={profile}
-        alt="Marly MOUTSINGA"
+        alt="Sevan Kedesh"
       />
       <div className="flex flex-col gap-4">
-        <h3 className="text-3xl font-bold text-white">MOUTSINGA Marly</h3>
+        <h3 className="text-3xl font-bold text-white">Sevan Kedesh IKISSA PENDY</h3>
         <p className="text-lg font-normal text-gray-400">
-          MERN Stack Developer
+          Full Stack Python & Mobile junior
         </p>
         <p className="text-base text-gray-400 tracking-wide">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
-          ipsam autem cumque, accusantium dicta odio.
+          Passionate about computing. Experienced in team-developed clinic 
+          reception system. Seeking constant improvement; currently training as accelerated data engineer.
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
-          Phone: <span className="text-lightText">+968 97859628</span>
+          Phone: <span className="text-lightText">+241 062.05.36.71 / 076.28.23.40</span>
         </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
-          Email: <span className="text-lightText">noor.jsdivs@gmail.com</span>
+          Email: <span className="text-lightText">pendysevan10@gmail.com</span>
         </p>
       </div>
       <div className="flex flex-col gap-4">
         <h2 className="text-base uppercase font-titleFont mb-4">Trouvez moi sur</h2>
         <div className="flex gap-4">
-          <span className="bannerIcon">
+          <a href="https://www.facebook.com" target='blank' className="bannerIcon">
             <FaFacebookF />
-          </span>
-          <span className="bannerIcon">
+          </a>
+          <a href="https://twitter.com" target='blank' className="bannerIcon">
             <FaTwitter />
-          </span>
-          <span className="bannerIcon">
+          </a>
+          <a href="https://www.linkedin.com/in/sevan-kedesh-ikissa-pendy-aa8095255" target='blank' className="bannerIcon">
             <FaLinkedinIn />
-          </span>
+          </a>
         </div>
       </div>
     </div>
