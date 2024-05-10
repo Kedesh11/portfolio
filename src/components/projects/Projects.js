@@ -17,45 +17,37 @@ const Projects = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
         <ProjectsCard
-          title="SOCIAL MEDIA CLONE"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          title="Patient terminal"
+          des="This is a patient terminal which allows patients to register or log in and 
+              then be directed to the specialist doctor's room."
           src={projectOne}
           github="https://example.com"
           site=""
         />
         <ProjectsCard
-          title="E-commerce Website"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          title="Tetris"
+          des="I reproduced the famous tetris game"
           src={projectTwo}
-        />
-        <ProjectsCard
-          title="Chatting App"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectThree}
-          github="https://example.com"
+          github="https://github.com/Kedesh23/tetris"
           site=""
         />
         <ProjectsCard
-          title="SOCIAL MEDIA CLONE"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+          title="Coruscant"
+          des="This is a small hospital management system allowing the doctor 
+                to make any prescription to the patient. Patients can view prescriptions, download documents, etc."
           src={projectThree}
+          github="https://github.com/Kedesh23/health"
+          site="http://sevan.coruscant.ndzile.com/"
         />
         <ProjectsCard
-          title="E-commerce Website"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectOne}
+          title="Dark Sky"
+          des="This is a web application made in Flask, allowing you to consult the weather forecast for a region via the openweather API. 
+                You can preview the weather for the last 5 and next 5 days."
+          src={projectThree}
+          github="https://github.com/Kedesh23/dark-sky"
+          site="https://dark-sky-xe9j.onrender.com/"
         />
-        <ProjectsCard
-          title="Chatting App"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
-          src={projectTwo}
-        />
+        
       </div>
     </section>
   );

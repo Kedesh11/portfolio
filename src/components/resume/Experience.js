@@ -19,7 +19,8 @@ const Experience = () => {
             title="Teacher School"
             subTitle="Ecole Superieur de Commerce et de Technologie (ESCT) - (14.01.23 - 19.01.23)"
             result="Gabon"
-            des="Mon module etait la gestion d'un projet web. Il etait question pour moi d'apprendre les differentes etapes, demarches et outils pour gerer un projet web."
+            des="My module was web project management. For me it was about learning the different steps, 
+                  approaches and tools to manage a web project."
           />
         </div>
       </div>
@@ -33,19 +34,21 @@ const Experience = () => {
             title = "O'lo Hub"
             subTitle = "Python Full Stack (02.2025 - Present)"
             result = "Gabon"
-            des = "J'etais en charge de developper la borne patient, celle ci permet aux patients de s'inscrire ou de se connecter puis d'etre orienter vers la salle du medecin specialiste."
+            des = "I was in charge of developing the patient terminal, 
+                  which allows patients to register or connect and then be directed to the specialist doctor's room."
           />
           <ResumeCard
             title = "Philo Multi Service (PMS)"
             subTitle = "Python Full Stack Developer & React Native (12.2023 - 02.2024)"
             result = "Gabon"
-            des = "Chef d'une equipe de trois (3) developpeurs, j'etais en charge de la supervisation, coordination des teams ainsi que de la conception des projets."
+            des = "Leader of a team of three (3) developers, I was in charge of supervision, 
+                  coordination of teams as well as project design.Leader of a team of three (3) developers, I was in charge of supervision, coordination of teams as well as project design."
           />
           <ResumeCard
             title = "BKM Gabon"
             subTitle = "Developpeur Mobile Flutter (05.2021 - 10.2021)"
             result = "Gabon"
-            des = "J'etais en charge de developper des solutions mobiles en Flutter."
+            des = "I was in charge of developing mobile solutions in Flutter."
           />
         </div>
       </div>
