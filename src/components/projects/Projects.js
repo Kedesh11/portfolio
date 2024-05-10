@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../layouts/Title'
-import { projectOne, projectTwo, projectThree } from "../../assets/index";
+import { projectOne, projectTwo, projectThree, projectFour } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
@@ -43,7 +43,7 @@ const Projects = () => {
           title="Dark Sky"
           des="This is a web application made in Flask, allowing you to consult the weather forecast for a region via the openweather API. 
                 You can preview the weather for the last 5 and next 5 days."
-          src={projectThree}
+          src={projectFour}
           github="https://github.com/Kedesh23/dark-sky"
           site="https://dark-sky-xe9j.onrender.com/"
         />

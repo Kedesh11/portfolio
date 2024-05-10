@@ -19,7 +19,7 @@ const Education = () => {
           <ResumeCard
             title="Data Engineer (In Progress)"
             subTitle="Africa TechUp Tout (ATUT) (27.04.2023 - 01.2025)"
-            result="Online()"
+            result="Online(OC)"
             des="I develop skills in data extraction, processing and loading. As well as the tools allowing me to carry out my daily work well."
           />
           <ResumeCard
@@ -31,7 +31,7 @@ const Education = () => {
           <ResumeCard
             title="Udemy"
             subTitle="Python Full Stack Developer (09.2022 - 03.12-2022)"
-            result="Online()"
+            result="Online"
             des="It was a question for me to learn the Django framework."
           />
           <ResumeCard
