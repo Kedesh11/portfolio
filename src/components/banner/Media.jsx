@@ -9,7 +9,7 @@ const Media = () => {
             Find me on
           </h2>
           <div className="flex gap-4">
-              <a href="https://www.facebook.com" target='blank' className="bannerIcon">
+              <a href="https://www.facebook.com/sevankedesh.zeustrinita" target='blank' className="bannerIcon">
                 <FaFacebookF />
               </a>
               <a href="https://twitter.com" target='blank' className="bannerIcon">
