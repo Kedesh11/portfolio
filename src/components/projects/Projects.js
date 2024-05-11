@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../layouts/Title'
-import { projectOne, projectTwo, projectThree, projectFour } from "../../assets/index";
+import { projectOne, projectTwo, projectThree, projectFour, projectFive } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
@@ -25,13 +25,6 @@ const Projects = () => {
           site=""
         />
         <ProjectsCard
-          title="Tetris"
-          des="I reproduced the famous tetris game"
-          src={projectTwo}
-          github="https://github.com/Kedesh23/tetris"
-          site=""
-        />
-        <ProjectsCard
           title="Coruscant"
           des="This is a small hospital management system allowing the doctor 
                 to make any prescription to the patient. Patients can view prescriptions, download documents, etc."
@@ -46,6 +39,20 @@ const Projects = () => {
           src={projectFour}
           github="https://github.com/Kedesh23/dark-sky"
           site="https://dark-sky-xe9j.onrender.com/"
+        />
+        <ProjectsCard
+          title="Mamyz"
+          des="This is a landing page to advertise a mobile application."
+          src={projectTwo}
+          github="https://github.com/Kedesh23/landing_page_mamyz"
+          site="https://landing-page-mamyz.vercel.app/"
+        />
+        <ProjectsCard
+          title="Freelance site"
+          des="There was talk of creating a freelance site with a collaborator to learn collaboration on github"
+          src={projectFive}
+          github="https://github.com/Kedesh23/freelance"
+          site="https://freelance-rho.vercel.app/"
         />
         
       </div>
