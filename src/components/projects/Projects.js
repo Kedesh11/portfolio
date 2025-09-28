@@ -1,9 +1,12 @@
 import React from 'react'
+import { useTranslation } from "react-i18next";
 import Title from '../layouts/Title'
-import { projectOne, projectTwo, projectThree, projectFour, projectFive } from "../../assets/index";
+import { projectOne, projectTwo, projectThree, projectFour, projectFive, projectSix } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
+  const { t } = useTranslation();
+  
   return (
     <section
       id="projects"
@@ -11,46 +14,56 @@ const Projects = () => {
     >
       <div className="flex justify-center items-center text-center">
         <Title
-          title="VISIT MY PORTFOLIO AND SAVE YOUR COMMENTS"
-          des="My projects"
+          title={t('projects.title')}
+          des={t('projects.subtitle')}
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
         <ProjectsCard
-          title="Patient terminal"
-          des="This is a patient terminal which allows patients to register or log in and 
-              then be directed to the specialist doctor's room."
+          title={t('projects.intelligentRecruiter.title')}
+          des={t('projects.intelligentRecruiter.description')}
           src={projectOne}
-          github="https://example.com"
-          site=""
+          github="https://github.com/Kedesh11/Model_recruiter"
+          site="https://recruiter-ai-sevan.streamlit.app/"
         />
+
         <ProjectsCard
-          title="Coruscant"
-          des="This is a small hospital management system allowing the doctor 
-                to make any prescription to the patient. Patients can view prescriptions, download documents, etc."
-          src={projectThree}
-          github="https://github.com/Kedesh23/health"
-          site="http://sevan.coruscant.ndzile.com/"
-        />
-        <ProjectsCard
-          title="Dark Sky"
-          des="This is a web application made in Flask, allowing you to consult the weather forecast for a region via the openweather API. 
-                You can preview the weather for the last 5 and next 5 days."
-          src={projectFour}
-          github="https://github.com/Kedesh23/dark-sky"
-          site="https://dark-sky-xe9j.onrender.com/"
-        />
-        <ProjectsCard
-          title="Mamyz"
-          des="This is a landing page to advertise a mobile application."
+          title={t('projects.api.title')}
+          des={t('projects.api.description')}
           src={projectTwo}
+          github="https://github.com/Kedesh11/SEEG-API"
+          site="https://seeg-backend-api.azurewebsites.net"
+        />
+
+        <ProjectsCard
+          title={t('projects.mamyz.title')}
+          des={t('projects.mamyz.description')}
+          src={projectThree}
           github="https://github.com/Kedesh23/landing_page_mamyz"
           site="https://landing-page-mamyz.vercel.app/"
         />
+        
         <ProjectsCard
-          title="Freelance site"
-          des="There was talk of creating a freelance site with a collaborator to learn collaboration on github"
+          title={t('projects.immo.title')}
+          des={t('projects.immo.description')}
+          src={projectFour}
+          github="https://github.com/Kedesh11/immo"
+          site="https://immobilier-alpha.vercel.app/"
+        />
+
+        <ProjectsCard
+          title={t('projects.ecommerce.title')}
+          des={t('projects.ecommerce.description')}
           src={projectFive}
+          github="https://github.com/Kedesh11/tracy-hair-commerce-hub"
+          site="https://majoliehair.vercel.app/"
+        />
+        
+        <ProjectsCard
+          title={t('projects.freelance.title')}
+          des={t('projects.freelance.description')}
+          // eslint-disable-next-line no-undef
+          src={projectSix}
           github="https://github.com/Kedesh23/freelance"
           site="https://freelance-rho.vercel.app/"
         />

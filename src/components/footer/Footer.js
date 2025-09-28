@@ -1,12 +1,16 @@
 import React from 'react'
+import { useTranslation } from "react-i18next";
+import { Link } from "react-scroll";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import {profile} from "../../assets/index"
+import {Me} from "../../assets/index"
 
 const Footer = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className="w-full py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-4 gap-8">
       <div className="w-full h-full flex flex-col gap-8">
-        <img className="w-32 rounded-full cover" src={profile} alt="profile" />
+        <img className="w-32 rounded-full cover" src={Me} alt="Me" />
         <div className="flex gap-4">
             <a href="https://www.facebook.com" target='blank' className="bannerIcon">
               <FaFacebookF />
@@ -21,112 +25,183 @@ const Footer = () => {
       </div>
       <div className="w-full h-full">
         <h3 className="text-xl uppercase text-designColor tracking-wider">
-          Lien rapide
+          Quick Links
         </h3>
         <ul className="flex flex-col gap-4 font-titleFont font-medium py-6 overflow-hidden">
           <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              A Propos
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer"
+            >
+              {t('footer.about')}
               <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
+            </Link>
           </li>
           <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Portfolio
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer"
+            >
+              {t('footer.portfolio')}
               <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
+            </Link>
           </li>
           <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Services
+            <Link
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer"
+            >
+              {t('footer.services')}
               <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
+            </Link>
           </li>
           <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Blog
+            <Link
+              to="resume"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer"
+            >
+              {t('footer.resume')}
               <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
+            </Link>
           </li>
           <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Contact
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer"
+            >
+              {t('footer.contact')}
               <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
+            </Link>
           </li>
         </ul>
       </div>
       <div className="w-full h-full">
         <h3 className="text-xl uppercase text-designColor tracking-wider">
-          RESOURCES
+          {t('services.title')}
         </h3>
         <ul className="flex flex-col gap-4 font-titleFont font-medium py-6 overflow-hidden">
           <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Authentication
+            <Link
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer"
+            >
+              {t('footer.servicesList.webDev')}
               <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
+            </Link>
           </li>
           <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Etat du systeme
+            <Link
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer"
+            >
+              {t('footer.servicesList.dataScience')}
               <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
+            </Link>
           </li>
           <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Condtions &  Services
+            <Link
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer"
+            >
+              {t('footer.servicesList.ai')}
               <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
+            </Link>
           </li>
           <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Prix
+            <Link
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer"
+            >
+              {t('footer.servicesList.mobile')}
               <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
+            </Link>
           </li>
           <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Over Right
+            <Link
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer"
+            >
+              {t('footer.servicesList.cloud')}
               <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
+            </Link>
           </li>
         </ul>
       </div>
       <div className="w-full h-full">
         <h3 className="text-xl uppercase text-designColor tracking-wider">
-          DEVELOPERS
+          {t('footer.contactInfo')}
         </h3>
         <ul className="flex flex-col gap-4 font-titleFont font-medium overflow-hidden py-6">
           <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Documentation
+            <a href="mailto:sevankedesh11@gmail.com" className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
+              sevankedesh11@gmail.com
               <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
+            </a>
           </li>
           <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Authentication
+            <a href="https://www.linkedin.com/in/sevan-kedesh-ikissa-pendy-aa8095255" target="_blank" rel="noopener noreferrer" className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
+              LinkedIn
               <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
+            </a>
           </li>
           <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              API Reference
+            <a href="https://github.com/Kedesh11" target="_blank" rel="noopener noreferrer" className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
+              GitHub
               <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
+            </a>
           </li>
           <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Support
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer"
+            >
+              {t('footer.requestQuote')}
               <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
-          </li>
-          <li>
-            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
-              Open Source
-              <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
-            </span>
+            </Link>
           </li>
         </ul>
       </div>

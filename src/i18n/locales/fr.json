@@ -1,0 +1,358 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "services": "Services",
+    "projects": "Projets",
+    "resume": "CV",
+    "contact": "Contact"
+  },
+  "banner": {
+    "greeting": "Salut, je suis",
+    "name": "Sevan Kedesh",
+    "title1": "Développeur Full-Stack Python & Data Scientist (Machine Learning)",
+    "description": "En tant que Développeur Full-Stack Python et Data Scientist, je conçois et optimise des solutions numériques et analytiques à forte valeur ajoutée. Animé par la recherche de performance, j'explore continuellement de nouvelles technologies pour transformer les données en leviers stratégiques.",
+    "findMe": "Trouvez-moi sur",
+    "bestSkills": "Mes meilleures compétences"
+  },
+  "services": {
+    "title": "MES SERVICES",
+    "subtitle": "Solutions professionnelles pour votre entreprise",
+    "categories": {
+      "all": "Tous",
+      "development": "Développement",
+      "data": "Données & Analytics",
+      "ai": "IA & Automatisation"
+    },
+    "technologies": "Technologies",
+    "included": "Inclus",
+    "items": {
+      "webDev": {
+        "title": "Développement Web",
+        "price": "À partir de 500 000 F CFA",
+        "description": "Création de sites web modernes et performants avec les dernières technologies.",
+        "features": [
+          "Sites web responsives",
+          "Applications web",
+          "E-commerce",
+          "Maintenance et support"
+        ]
+      },
+      "dataScience": {
+        "title": "Data Science & Analytics",
+        "price": "À partir de 600 000 F CFA",
+        "description": "Solutions de gestion et d'analyse de données pour optimiser vos processus.",
+        "features": [
+          "Bases de données",
+          "Tableaux de bord",
+          "Rapports automatisés",
+          "Business intelligence"
+        ]
+      },
+      "ai": {
+        "title": "Intelligence Artificielle",
+        "price": "À partir de 800 000 F CFA",
+        "description": "Intégration de solutions IA pour automatiser et optimiser vos processus.",
+        "features": [
+          "Chatbots intelligents",
+          "Machine Learning",
+          "Traitement du langage naturel",
+          "Vision par ordinateur"
+        ]
+      },
+      "mobile": {
+        "title": "Applications Mobiles",
+        "price": "À partir de 700 000 F CFA",
+        "description": "Développement d'applications mobiles natives et cross-platform.",
+        "features": [
+          "Applications iOS et Android",
+          "React Native",
+          "Flutter",
+          "PWA (Progressive Web Apps)"
+        ]
+      },
+      "cloud": {
+        "title": "Solutions Cloud",
+        "price": "À partir de 400 000 F CFA",
+        "description": "Déploiement et gestion d'infrastructures cloud sécurisées.",
+        "features": [
+          "Déploiement cloud",
+          "Conteneurisation",
+          "CI/CD",
+          "Monitoring et sécurité"
+        ]
+      },
+      "bi": {
+        "title": "Business Intelligence",
+        "price": "À partir de 550 000 F CFA",
+        "description": "Tableaux de bord et rapports pour la prise de décision stratégique.",
+        "features": [
+          "Tableaux de bord interactifs",
+          "Rapports automatisés",
+          "Visualisation de données",
+          "Formation utilisateurs"
+        ]
+      },
+      "automation": {
+        "title": "Automatisation",
+        "price": "À partir de 300 000 F CFA",
+        "description": "Automatisation des processus métier pour améliorer l'efficacité.",
+        "features": [
+          "Automatisation des processus",
+          "Robots logiciels",
+          "Intégration de systèmes",
+          "Formation des équipes"
+        ]
+      },
+      "consulting": {
+        "title": "Conseil en Transformation Digitale",
+        "price": "À partir de 900 000 F CFA",
+        "description": "Accompagnement stratégique pour la transformation digitale de votre entreprise.",
+        "features": [
+          "Audit technologique",
+          "Stratégie digitale",
+          "Formation des équipes",
+          "Suivi et optimisation"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Prêt à transformer votre entreprise ?",
+      "description": "Contactez-moi pour discuter de vos besoins et obtenir un devis personnalisé.",
+      "requestQuote": "Demander un devis",
+      "viewProjects": "Voir mes projets"
+    }
+  },
+  "projects": {
+    "title": "MES PROJETS",
+    "subtitle": "Mes Projets",
+    "intelligentRecruiter": {
+      "title": "Recruteur Intelligent",
+      "description": "Plateforme IA pour l'analyse automatique de CV et la correspondance candidat-poste avec machine learning."
+    },
+    "api": {
+      "title": "API REST - Backend",
+      "description": "API RESTful robuste développée avec Python/FastAPI pour la gestion de données et services web."
+    },
+    "mamyz": {
+      "title": "Landing Page Mamyz",
+      "description": "Site web moderne et responsive pour une entreprise de services, optimisé pour la conversion."
+    },
+    "immo": {
+      "title": "Plateforme Immobilière",
+      "description": "Application web complète pour la gestion et recherche immobilière avec filtres avancés."
+    },
+    "ecommerce": {
+      "title": "E-commerce Tracy Hair",
+      "description": "Boutique en ligne complète avec panier, paiement et gestion des commandes pour produits capillaires."
+    },
+    "freelance": {
+      "title": "Plateforme Freelance",
+      "description": "Marketplace pour connecter freelances et clients avec système de matching et paiement."
+    }
+  },
+  "resume": {
+    "title": "MON CV",
+    "subtitle": "Mon parcours professionnel",
+    "tabs": {
+      "education": "Formation",
+      "skills": "Compétences",
+      "experience": "Expérience",
+      "achievements": "Réalisations"
+    },
+    "education": {
+      "period": "2020 - 2025",
+      "title": "Formation",
+      "microsoftAzure": {
+        "title": "Microsoft Azure Data Engineer Associate",
+        "subTitle": "Microsoft",
+        "result": "Certification obtenue",
+        "description": "Certification professionnelle en ingénierie de données sur la plateforme Azure."
+      },
+      "dataEngineering": {
+        "title": "Data Engineering avec Python",
+        "subTitle": "Institut de Formation",
+        "result": "Formation terminée",
+        "description": "Formation intensive en data engineering avec Python, Apache Airflow et bases de données."
+      },
+      "pythonFullstackQwasar": {
+        "title": "Développeur Python Full-Stack",
+        "subTitle": "Qwasar Silicon Valley",
+        "result": "Diplôme obtenu",
+        "description": "Formation complète en développement full-stack avec Python, Django, React et bases de données."
+      },
+      "pythonFullstackUdemy": {
+        "title": "Bootcamp Python Full-Stack",
+        "subTitle": "Udemy",
+        "result": "Certification obtenue",
+        "description": "Formation intensive en développement web avec Python, Django, Flask et technologies frontend."
+      },
+      "secondarySchool": {
+        "title": "Baccalauréat Scientifique",
+        "subTitle": "Lycée National",
+        "result": "Mention Bien",
+        "description": "Enseignement secondaire avec spécialisation en sciences et mathématiques."
+      }
+    },
+    "skills": {
+      "dataSkills": "Compétences Data",
+      "developmentSkills": "Compétences Développement",
+      "skills": {
+        "dataWrangling": "Manipulation de Données",
+        "dataCleaning": "Nettoyage de Données",
+        "machineLearning": "Machine Learning",
+        "dataVisualization": "Visualisation de Données",
+        "storytelling": "Data Storytelling",
+        "aiAgents": "Agents IA",
+        "python": "Python",
+        "react": "React",
+        "django": "Django",
+        "fastapi": "FastAPI",
+        "postgresql": "PostgreSQL",
+        "azure": "Microsoft Azure"
+      }
+    },
+    "experience": {
+      "jobPeriod": "2023 - Présent",
+      "jobTitle": "Expérience Professionnelle",
+      "jobs": {
+        "cnx": {
+          "title": "Développeur Full-Stack & Data Scientist",
+          "subTitle": "CNX Technologies",
+          "result": "Jan 2023 - Présent",
+          "des": "Développement d'applications web et solutions d'analyse de données utilisant Python, React et technologies de machine learning."
+        },
+        "esct": {
+          "title": "Enseignant Gestion de Projet Web",
+          "subTitle": "ESCT",
+          "result": "Sep 2022 - Déc 2022",
+          "des": "Enseignement du module de gestion de projet web aux étudiants. Couverture des sujets incluant la planification de projet, les méthodologies de développement et les technologies web modernes."
+        }
+      },
+      "internshipPeriod": "2022 - 2023",
+      "internshipTitle": "Stages",
+      "internships": {
+        "nsia": {
+          "title": "Stagiaire Analyse de Données",
+          "subTitle": "NSIA Insurance",
+          "result": "Juin 2022 - Août 2022",
+          "des": "Analyse de données et reporting utilisant Python et méthodes statistiques."
+        },
+        "olo": {
+          "title": "Stagiaire Développement Web",
+          "subTitle": "OLO Technologies",
+          "result": "Mars 2022 - Mai 2022",
+          "des": "Développement d'applications web responsives utilisant React et Node.js."
+        },
+        "pms": {
+          "title": "Stagiaire Développement Web",
+          "subTitle": "PMS Technologies",
+          "result": "Jan 2022 - Fév 2022",
+          "des": "Développement d'applications web responsives utilisant React et Node.js."
+        },
+        "bkm": {
+          "title": "Stagiaire Data Science",
+          "subTitle": "BKM Analytics",
+          "result": "Nov 2021 - Déc 2021",
+          "des": "Analyse de données et développement de modèles prédictifs avec Python et machine learning."
+        }
+      }
+    },
+    "achievements": {
+      "title": "Réalisations",
+      "period": "2020 - 2025",
+      "items": {
+        "microsoft": {
+          "title": "Microsoft Azure Data Engineer Associate",
+          "subTitle": "Microsoft",
+          "result": "Certification obtenue",
+          "des": "Certification professionnelle en ingénierie de données cloud sur la plateforme Azure."
+        },
+        "kaggle": {
+          "title": "Vainqueur Compétition Kaggle",
+          "subTitle": "Kaggle",
+          "result": "1ère Place",
+          "des": "Remporté la première place dans une compétition de machine learning avec 500+ participants."
+        },
+        "speaker": {
+          "title": "Conférencier AI Summit",
+          "subTitle": "Conférence Tech",
+          "result": "Conférencier Principal",
+          "des": "Présentation sur les applications du machine learning en entreprise lors d'une grande conférence tech."
+        },
+        "opensource": {
+          "title": "Contributeur Open Source",
+          "subTitle": "GitHub",
+          "result": "Contributeur Actif",
+          "des": "Contribué à des projets open source majeurs avec 1000+ étoiles sur GitHub."
+        },
+        "hackathon": {
+          "title": "Vainqueur Hackathon",
+          "subTitle": "Défi Tech",
+          "result": "1ère Place",
+          "des": "Remporté la première place dans un hackathon de 48h avec une solution IA innovante."
+        }
+      },
+      "achievements": {
+        "certification1": {
+          "title": "Microsoft Azure Data Engineer Associate",
+          "description": "Certification professionnelle en ingénierie de données cloud."
+        },
+        "certification2": {
+          "title": "Développeur Python Full-Stack",
+          "description": "Certification complète en développement full-stack."
+        },
+        "project1": {
+          "title": "Plateforme Recruteur Intelligent",
+          "description": "Plateforme de recrutement alimentée par l'IA avec machine learning."
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "CONTACTEZ-MOI",
+    "subtitle": "Discutons de votre projet",
+    "form": {
+      "success": "Message envoyé avec succès, {{name}} !",
+      "error": "Échec de l'envoi du message. Veuillez réessayer.",
+      "errors": {
+        "nameRequired": "Le nom est requis",
+        "phoneRequired": "Le téléphone est requis",
+        "emailRequired": "L'email est requis",
+        "emailInvalid": "Veuillez entrer une adresse email valide",
+        "subjectRequired": "Le sujet est requis",
+        "messageRequired": "Le message est requis"
+      },
+      "name": "Nom",
+      "phone": "Téléphone",
+      "email": "Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "send": "Envoyer le Message",
+      "sending": "Envoi en cours..."
+    }
+  },
+  "footer": {
+    "about": "À propos",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "resume": "CV",
+    "contact": "Contact",
+    "quickLinks": {
+      "about": "À propos",
+      "portfolio": "Portfolio",
+      "services": "Services",
+      "resume": "CV",
+      "contact": "Contact"
+    },
+    "servicesList": {
+      "webDev": "Développement Web",
+      "dataScience": "Data Science",
+      "ai": "Intelligence Artificielle",
+      "mobile": "Applications Mobiles",
+      "cloud": "Solutions Cloud"
+    },
+    "contactInfo": "Informations de Contact",
+    "requestQuote": "Demander un devis",
+    "allRightsReserved": "Tous droits réservés"
+  }
+}

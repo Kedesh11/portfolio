@@ -1,4 +1,5 @@
 import React, {  useState } from 'react'
+import { useTranslation } from "react-i18next";
 import Title from '../layouts/Title';
 import Education from './Education';
 import Skills from './Skills';
@@ -6,14 +7,15 @@ import Achievement from './Achievement';
 import Experience from "./Experience"
 
 const Resume = () => {
+   const { t, i18n } = useTranslation();
    const [educationData, setEducationData] = useState(true);
    const [skillData, setSkillData] = useState(false);
    const [experienceData, setExperienceData] = useState(false);
    const [achievementData, setAchievementData] = useState(false);
   return (
-    <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
+    <section id="resume" className="w-full py-20 border-b-[1px] border-b-black relative z-10">
       <div className="flex justify-center items-center text-center">
-        <Title title="" des="My summary" />
+        <Title title={t('resume.title')} des={t('resume.subtitle')} />
       </div>
       <div>
         <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
@@ -30,7 +32,7 @@ const Resume = () => {
                 : "border-transparent"
             } resumeLi`}
           >
-            Education
+            {t('resume.tabs.education')}
           </li>
           <li
             onClick={() =>
@@ -43,7 +45,7 @@ const Resume = () => {
               skillData ? "border-designColor rounded-lg" : "border-transparent"
             } resumeLi`}
           >
-            Skills
+            {t('resume.tabs.skills')}
           </li>
           <li
             onClick={() =>
@@ -58,7 +60,7 @@ const Resume = () => {
                 : "border-transparent"
             } resumeLi`}
           >
-            Experience
+            {t('resume.tabs.experience')}
           </li>
           <li
             onClick={() =>
@@ -73,14 +75,18 @@ const Resume = () => {
                 : "border-transparent"
             } resumeLi`}
           >
-            Realisations
+            {t('resume.tabs.achievements')}
           </li>
         </ul>
       </div>
-      {educationData && <Education />}
-      {skillData && <Skills />}
-      {achievementData && <Achievement />}
-      {experienceData && <Experience />}
+      
+      {/* Contenu des onglets avec espacement approprié */}
+      <div className="mt-8 min-h-[800px] relative" key={i18n.language}>
+        {educationData && <Education />}
+        {skillData && <Skills />}
+        {achievementData && <Achievement />}
+        {experienceData && <Experience />}
+      </div>
  
     </section>
   );

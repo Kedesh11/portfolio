@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
@@ -9,6 +10,8 @@ import { navLinksdata } from '../../constants';
 
 const Navbar = () => {
   const [showMenu, setShowMenu]=useState(false)
+  const { t } = useTranslation();
+  
   return (
     <div className="w-full p-[3em] sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
       <div>
@@ -29,7 +32,7 @@ const Navbar = () => {
                 offset={-70}
                 duration={500}
               >
-                {title}
+                {t(`navigation.${title.toLowerCase()}`)}
               </Link>
             </li>
           ))}
@@ -66,14 +69,14 @@ const Navbar = () => {
                       offset={-70}
                       duration={500}
                     >
-                      {item.title}
+                      {t(`navigation.${item.title.toLowerCase()}`)}
                     </Link>
                   </li>
                 ))}
               </ul>
               <div className="flex flex-col gap-4">
                 <h2 className="text-base uppercase font-titleFont mb-4">
-                Find me on
+                  {t('banner.findMe')}
                 </h2>
                 <div className="flex gap-4">
                   <a href="https://www.facebook.com" target='blank' className="bannerIcon">
@@ -87,13 +90,13 @@ const Navbar = () => {
                   </a>
                 </div>
               </div>
-              <span
-                onClick={() => setShowMenu(false)}
-                className="absolute top-4 right-4 text-gray-400 hover:text-designColor duration-300 text-2xl cursor-pointer"
-              >
-                <MdClose />
-              </span>
             </div>
+            <span
+              onClick={() => setShowMenu(false)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-designColor duration-300 text-xl cursor-pointer"
+            >
+              <MdClose />
+            </span>
           </div>
         )}
       </div>

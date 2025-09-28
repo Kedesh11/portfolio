@@ -1,12 +1,16 @@
 import React from 'react'
+import { useTranslation } from "react-i18next";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import { SiTailwindcss, SiPython, SiDjango, SiFlask } from "react-icons/si";
+import { SiPython, SiMicrosoftazure, SiReact } from "react-icons/si";
+
 const Media = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
         <div>
           <h2 className="text-base uppercase font-titleFont mb-4">
-            Find me on
+            {t('banner.findMe')}
           </h2>
           <div className="flex gap-4">
               <a href="https://www.facebook.com/sevankedesh.zeustrinita" target='blank' className="bannerIcon">
@@ -22,20 +26,17 @@ const Media = () => {
         </div>
         <div>
           <h2 className="text-base uppercase font-titleFont mb-4">
-            My best skills
+            {t('banner.bestSkills')}
           </h2>
           <div className="flex gap-4">
             <span className="bannerIcon">
               <SiPython />
             </span>
             <span className="bannerIcon">
-              <SiDjango />
+              <SiMicrosoftazure />
             </span>
             <span className="bannerIcon">
-              <SiFlask />
-            </span>
-            <span className="bannerIcon">
-              <SiTailwindcss />
+              <SiReact/>
             </span>
           </div>
         </div>

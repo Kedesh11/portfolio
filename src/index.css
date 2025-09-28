@@ -27,3 +27,36 @@
 .scrollbar-hide::-webkit-scrollbar{
     display: none;
 }
+/* Animation personnalisée pour le bouton de traduction */
+@keyframes gentleBounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
+
+.language-toggle-bounce {
+  animation: gentleBounce 3s ease-in-out infinite;
+}
+
+/* Animation de pulsation pour attirer l'attention */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 1, 79, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 1, 79, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 1, 79, 0);
+  }
+}
+
+.language-toggle-pulse {
+  animation: pulse 2s infinite;
+}

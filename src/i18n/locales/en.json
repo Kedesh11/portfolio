@@ -1,0 +1,358 @@
+{
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "resume": "Resume",
+    "contact": "Contact"
+  },
+  "banner": {
+    "greeting": "Hi, I'm",
+    "name": "Sevan Kedesh",
+    "title1": "Full-Stack Python & Data Scientist (Machine Learning)",
+    "description": "As a Full-Stack Python Developer and Data Scientist, I design and optimize high-value digital and analytical solutions. Driven by the pursuit of performance, I continually explore new technologies to transform data into strategic levers.",
+    "findMe": "Find me on",
+    "bestSkills": "My best skills"
+  },
+  "services": {
+    "title": "MY SERVICES",
+    "subtitle": "Professional solutions for your business",
+    "categories": {
+      "all": "All",
+      "development": "Development",
+      "data": "Data & Analytics",
+      "ai": "AI & Automation"
+    },
+    "technologies": "Technologies",
+    "included": "Included",
+    "items": {
+      "webDev": {
+        "title": "Web Development",
+        "price": "From 500,000 F CFA",
+        "description": "Creation of modern and performant websites with the latest technologies.",
+        "features": [
+          "Responsive websites",
+          "Web applications",
+          "E-commerce",
+          "Maintenance and support"
+        ]
+      },
+      "dataScience": {
+        "title": "Data Science & Analytics",
+        "price": "From 600,000 F CFA",
+        "description": "Data management and analysis solutions to optimize your processes.",
+        "features": [
+          "Databases",
+          "Dashboards",
+          "Automated reports",
+          "Business intelligence"
+        ]
+      },
+      "ai": {
+        "title": "Artificial Intelligence",
+        "price": "From 800,000 F CFA",
+        "description": "AI solution integration to automate and optimize your processes.",
+        "features": [
+          "Intelligent chatbots",
+          "Machine Learning",
+          "Natural language processing",
+          "Computer vision"
+        ]
+      },
+      "mobile": {
+        "title": "Mobile Applications",
+        "price": "From 700,000 F CFA",
+        "description": "Development of native and cross-platform mobile applications.",
+        "features": [
+          "iOS and Android apps",
+          "React Native",
+          "Flutter",
+          "PWA (Progressive Web Apps)"
+        ]
+      },
+      "cloud": {
+        "title": "Cloud Solutions",
+        "price": "From 400,000 F CFA",
+        "description": "Deployment and management of secure cloud infrastructures.",
+        "features": [
+          "Cloud deployment",
+          "Containerization",
+          "CI/CD",
+          "Monitoring and security"
+        ]
+      },
+      "bi": {
+        "title": "Business Intelligence",
+        "price": "From 550,000 F CFA",
+        "description": "Dashboards and reports for strategic decision making.",
+        "features": [
+          "Interactive dashboards",
+          "Automated reports",
+          "Data visualization",
+          "User training"
+        ]
+      },
+      "automation": {
+        "title": "Automation",
+        "price": "From 300,000 F CFA",
+        "description": "Business process automation to improve efficiency.",
+        "features": [
+          "Process automation",
+          "Software robots",
+          "System integration",
+          "Team training"
+        ]
+      },
+      "consulting": {
+        "title": "Digital Transformation Consulting",
+        "price": "From 900,000 F CFA",
+        "description": "Strategic support for your company's digital transformation.",
+        "features": [
+          "Technology audit",
+          "Digital strategy",
+          "Team training",
+          "Follow-up and optimization"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ready to transform your business?",
+      "description": "Contact me to discuss your needs and get a personalized quote.",
+      "requestQuote": "Request a quote",
+      "viewProjects": "View my projects"
+    }
+  },
+  "projects": {
+    "title": "MY PROJECTS",
+    "subtitle": "My Projects",
+    "intelligentRecruiter": {
+      "title": "Intelligent Recruiter",
+      "description": "AI platform for automatic CV analysis and candidate-job matching with machine learning."
+    },
+    "api": {
+      "title": "REST API - Backend",
+      "description": "Robust RESTful API developed with Python/FastAPI for data management and web services."
+    },
+    "mamyz": {
+      "title": "Mamyz Landing Page",
+      "description": "Modern and responsive website for a service company, optimized for conversion."
+    },
+    "immo": {
+      "title": "Real Estate Platform",
+      "description": "Complete web application for real estate management and search with advanced filters."
+    },
+    "ecommerce": {
+      "title": "Tracy Hair E-commerce",
+      "description": "Complete online store with cart, payment and order management for hair products."
+    },
+    "freelance": {
+      "title": "Freelance Platform",
+      "description": "Marketplace to connect freelancers and clients with matching and payment system."
+    }
+  },
+  "resume": {
+    "title": "MY RESUME",
+    "subtitle": "My professional journey",
+    "tabs": {
+      "education": "Education",
+      "skills": "Skills",
+      "experience": "Experience",
+      "achievements": "Achievements"
+    },
+    "education": {
+      "period": "2020 - 2025",
+      "title": "Education",
+      "microsoftAzure": {
+        "title": "Microsoft Azure Data Engineer Associate",
+        "subTitle": "Microsoft",
+        "result": "Certification obtained",
+        "description": "Professional certification in data engineering on the Azure platform."
+      },
+      "dataEngineering": {
+        "title": "Data Engineering with Python",
+        "subTitle": "Training Institute",
+        "result": "Training completed",
+        "description": "Intensive training in data engineering with Python, Apache Airflow and databases."
+      },
+      "pythonFullstackQwasar": {
+        "title": "Python Full-Stack Developer",
+        "subTitle": "Qwasar Silicon Valley",
+        "result": "Diploma obtained",
+        "description": "Complete training in full-stack development with Python, Django, React and databases."
+      },
+      "pythonFullstackUdemy": {
+        "title": "Python Full-Stack Bootcamp",
+        "subTitle": "Udemy",
+        "result": "Certification obtained",
+        "description": "Intensive training in web development with Python, Django, Flask and frontend technologies."
+      },
+      "secondarySchool": {
+        "title": "Scientific Baccalaureate",
+        "subTitle": "National High School",
+        "result": "Good Mention",
+        "description": "Secondary education with specialization in sciences and mathematics."
+      }
+    },
+    "skills": {
+      "dataSkills": "Data Skills",
+      "developmentSkills": "Development Skills",
+      "skills": {
+        "dataWrangling": "Data Wrangling",
+        "dataCleaning": "Data Cleaning",
+        "machineLearning": "Machine Learning",
+        "dataVisualization": "Data Visualization",
+        "storytelling": "Data Storytelling",
+        "aiAgents": "AI Agents",
+        "python": "Python",
+        "react": "React",
+        "django": "Django",
+        "fastapi": "FastAPI",
+        "postgresql": "PostgreSQL",
+        "azure": "Microsoft Azure"
+      }
+    },
+    "experience": {
+      "jobPeriod": "2023 - Present",
+      "jobTitle": "Professional Experience",
+      "jobs": {
+        "cnx": {
+          "title": "Full-Stack Developer & Data Scientist",
+          "subTitle": "CNX 4.0",
+          "result": "Jan 2023 - Present",
+          "des": "Development of web applications and data analysis solutions using Python, React, and machine learning technologies."
+        },
+        "esct": {
+          "title": "Web Project Management Teacher",
+          "subTitle": "ESCT",
+          "result": "Sep 2022 - Dec 2022",
+          "des": "Teaching web project management module to students. Covered topics including project planning, development methodologies, and modern web technologies."
+        }
+      },
+      "internshipPeriod": "2022 - 2023",
+      "internshipTitle": "Internships",
+      "internships": {
+        "nsia": {
+          "title": "Data Analysis Intern",
+          "subTitle": "NSIA Insurance",
+          "result": "Jun 2022 - Aug 2022",
+          "des": "Data analysis and reporting using Python and statistical methods."
+        },
+        "olo": {
+          "title": "Web Development Intern",
+          "subTitle": "OLO Technologies",
+          "result": "Mar 2022 - May 2022",
+          "des": "Development of responsive web applications using React and Node.js."
+        },
+        "pms": {
+          "title": "Web Development Intern",
+          "subTitle": "PMS Technologies",
+          "result": "Jan 2022 - Feb 2022",
+          "des": "Development of responsive web applications using React and Node.js."
+        },
+        "bkm": {
+          "title": "Data Science Intern",
+          "subTitle": "BKM Analytics",
+          "result": "Nov 2021 - Dec 2021",
+          "des": "Data analysis and predictive model development with Python and machine learning."
+        }
+      }
+    },
+    "achievements": {
+      "title": "Achievements",
+      "period": "2020 - 2025",
+      "items": {
+        "microsoft": {
+          "title": "Microsoft Azure Data Engineer Associate",
+          "subTitle": "Microsoft",
+          "result": "Certification obtained",
+          "des": "Professional certification in cloud data engineering on Azure platform."
+        },
+        "kaggle": {
+          "title": "Kaggle Competition Winner",
+          "subTitle": "Kaggle",
+          "result": "1st Place",
+          "des": "Won first place in a machine learning competition with 500+ participants."
+        },
+        "speaker": {
+          "title": "AI Summit Speaker",
+          "subTitle": "Tech Conference",
+          "result": "Featured Speaker",
+          "des": "Presented on machine learning applications in business at major tech conference."
+        },
+        "opensource": {
+          "title": "Open Source Contributor",
+          "subTitle": "GitHub",
+          "result": "Active Contributor",
+          "des": "Contributed to major open source projects with 1000+ stars on GitHub."
+        },
+        "hackathon": {
+          "title": "Hackathon Winner",
+          "subTitle": "Tech Challenge",
+          "result": "1st Place",
+          "des": "Won first place in a 48-hour hackathon with innovative AI solution."
+        }
+      },
+      "achievements": {
+        "certification1": {
+          "title": "Microsoft Azure Data Engineer Associate",
+          "description": "Professional certification in cloud data engineering."
+        },
+        "certification2": {
+          "title": "Python Full-Stack Developer",
+          "description": "Complete certification in full-stack development."
+        },
+        "project1": {
+          "title": "Intelligent Recruiter Platform",
+          "description": "AI-powered recruitment platform with machine learning."
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "CONTACT ME",
+    "subtitle": "Let's discuss your project",
+    "form": {
+      "success": "Message sent successfully, {{name}}!",
+      "error": "Failed to send message. Please try again.",
+      "errors": {
+        "nameRequired": "Name is required",
+        "phoneRequired": "Phone is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address",
+        "subjectRequired": "Subject is required",
+        "messageRequired": "Message is required"
+      },
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending..."
+    }
+  },
+  "footer": {
+    "about": "About",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "resume": "Resume",
+    "contact": "Contact",
+    "quickLinks": {
+      "about": "About",
+      "portfolio": "Portfolio",
+      "services": "Services",
+      "resume": "Resume",
+      "contact": "Contact"
+    },
+    "servicesList": {
+      "webDev": "Web Development",
+      "dataScience": "Data Science",
+      "ai": "Artificial Intelligence",
+      "mobile": "Mobile Applications",
+      "cloud": "Cloud Solutions"
+    },
+    "contactInfo": "Contact Information",
+    "requestQuote": "Request a quote",
+    "allRightsReserved": "All rights reserved"
+  }
+}

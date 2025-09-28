@@ -1,75 +1,61 @@
 import React from 'react'
+import { useTranslation } from "react-i18next";
 import { motion } from 'framer-motion';
 import ResumeCard from './ResumeCard';
 
 const Education = () => {
+  const { t } = useTranslation();
+  
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
-      className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
+      className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20 min-h-[800px] relative z-10"
     >
       {/* part one */}
-      <div>
+      <div className="w-full">
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">1998 - 2010</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Education Quality</h2>
+          <p className="text-sm text-designColor tracking-[4px]">{t('resume.education.period')}</p>
+          <h2 className="text-3xl md:text-4xl font-bold">{t('resume.education.title')}</h2>
         </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+        
+        <div className="space-y-8 pb-8">
           <ResumeCard
-            title="Data Engineer (In Progress)"
-            subTitle="Africa TechUp Tout (ATUT) (27.04.2023 - 01.2025)"
-            result="Online(OC)"
-            des="I develop skills in data extraction, processing and loading. As well as the tools allowing me to carry out my daily work well."
+            title={t('resume.education.microsoftAzure.title')}
+            subTitle={t('resume.education.microsoftAzure.subTitle')}
+            result={t('resume.education.microsoftAzure.result')}
+            des={t('resume.education.microsoftAzure.description')}
           />
+
           <ResumeCard
-            title="Qwasar Silivon Valley"
-            subTitle="Python Full Stack Developer (05.05.2023 - 05.05.2024)"
-            result="Online (USA)"
-            des="I have developed strong technical and collaborative skills."
+            title={t('resume.education.dataEngineering.title')}
+            subTitle={t('resume.education.dataEngineering.subTitle')}
+            result={t('resume.education.dataEngineering.result')}
+            des={t('resume.education.dataEngineering.description')}
           />
+
           <ResumeCard
-            title="Udemy"
-            subTitle="Python Full Stack Developer (09.2022 - 03.12-2022)"
-            result="Online"
-            des="It was a question for me to learn the Django framework."
+            title={t('resume.education.pythonFullstackQwasar.title')}
+            subTitle={t('resume.education.pythonFullstackQwasar.subTitle')}
+            result={t('resume.education.pythonFullstackQwasar.result')}
+            des={t('resume.education.pythonFullstackQwasar.description')}
           />
+
           <ResumeCard
-            title="Secondary School Education"
-            subTitle="Omar Bongo National Technical High School (2019 - 2021)"
-            result="Gabon"
-            des="I had my specialty baccalaureate F3. Industrial Electricity and Industrial IT."
+            title={t('resume.education.pythonFullstackUdemy.title')}
+            subTitle={t('resume.education.pythonFullstackUdemy.subTitle')}
+            result={t('resume.education.pythonFullstackUdemy.result')}
+            des={t('resume.education.pythonFullstackUdemy.description')}
+          />
+
+          <ResumeCard
+            title={t('resume.education.secondarySchool.title')}
+            subTitle={t('resume.education.secondarySchool.subTitle')}
+            result={t('resume.education.secondarySchool.result')}
+            des={t('resume.education.secondarySchool.description')}
           />
         </div>
       </div>
-      {/* part Two */}
-
-      {/* <div>
-        <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Job Experience</h2>
-        </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCard
-            title="Sr. Software Engineer"
-            subTitle="Google Out Tech - (2017 - Present)"
-            result="USA"
-            des="Google's hiring process is an important part of our culture. Googlers care deeply about their teams and the people who make them up."
-          />
-          <ResumeCard
-            title="Web Developer & Trainer"
-            subTitle="Apple Developer Team - (2012 - 2016)"
-            result="MALAYSIA"
-            des="A popular destination with a growing number of highly qualified homegrown graduates, it's true that securing a role in Malaysia isn't easy."
-          />
-          <ResumeCard
-            title="Front-end Developer"
-            subTitle="Nike - (2020 - 2011)"
-            result="Oman"
-            des="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
-          />
-        </div>
-      </div> */}
     </motion.div>
   );
 }
