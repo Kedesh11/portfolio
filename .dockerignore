@@ -1,0 +1,9 @@
+node_modules
+build
+Dockerfile
+.dockerignore
+.git
+.gitignore
+.qodo
+.env
+.env.example
