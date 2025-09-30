@@ -45,6 +45,11 @@
       "last 1 safari version"
     ]
   },
+  "overrides": {
+    "@apideck/better-ajv-errors": {
+      "ajv": "^8.17.1"
+    }
+  },
   "devDependencies": {
     "ajv": "^6.12.6",
     "ajv-keywords": "^3.5.2",
