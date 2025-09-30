@@ -1,0 +1,81 @@
+name: Deploy to Azure App Service (Container)
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  id-token: write   # for azure/login OIDC
+  contents: read
+
+env:
+  AZURE_RESOURCE_GROUP: portfolio-sevan
+  AZURE_WEBAPP_NAME: sevan
+  ACR_NAME: portfoliosevanacr
+  IMAGE_NAME: portfolio
+  DOCKERFILE_PATH: web/portfolio/portfolio/Dockerfile
+  DOCKER_BUILD_CONTEXT: web/portfolio/portfolio
+  PORT: "80"
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          # Recommended: use OIDC with a Federated Credential OR provide AZURE_CREDENTIALS secret with a Service Principal JSON
+          # See: https://github.com/azure/login#configure-deployment-credentials
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Get ACR login server
+        id: acr
+        run: |
+          loginServer=$(az acr show -n "$ACR_NAME" --query loginServer -o tsv)
+          echo "loginServer=$loginServer" >> $GITHUB_OUTPUT
+
+      - name: Azure CLI - Login to ACR for Docker
+        run: |
+          az acr login -n "$ACR_NAME"
+
+      - name: Build Docker image
+        run: |
+          IMAGE_TAG=${{ steps.acr.outputs.loginServer }}/$IMAGE_NAME:${{ github.sha }}
+          LATEST_TAG=${{ steps.acr.outputs.loginServer }}/$IMAGE_NAME:latest
+          docker build -f "$DOCKERFILE_PATH" -t "$IMAGE_TAG" -t "$LATEST_TAG" "$DOCKER_BUILD_CONTEXT"
+
+      - name: Push Docker image to ACR
+        run: |
+          IMAGE_TAG=${{ steps.acr.outputs.loginServer }}/$IMAGE_NAME:${{ github.sha }}
+          LATEST_TAG=${{ steps.acr.outputs.loginServer }}/$IMAGE_NAME:latest
+          docker push "$IMAGE_TAG"
+          docker push "$LATEST_TAG"
+
+      - name: Configure App Service container image
+        run: |
+          IMAGE_TAG=${{ steps.acr.outputs.loginServer }}/$IMAGE_NAME:${{ github.sha }}
+          az webapp config container set \
+            -n "$AZURE_WEBAPP_NAME" \
+            -g "$AZURE_RESOURCE_GROUP" \
+            --container-image-name "$IMAGE_TAG" \
+            --container-registry-url "https://${{ steps.acr.outputs.loginServer }}"
+
+      - name: Ensure WEBSITES_PORT is set
+        run: |
+          az webapp config appsettings set \
+            -n "$AZURE_WEBAPP_NAME" \
+            -g "$AZURE_RESOURCE_GROUP" \
+            --settings WEBSITES_PORT=$PORT
+
+      - name: Restart Web App
+        run: |
+          az webapp restart -n "$AZURE_WEBAPP_NAME" -g "$AZURE_RESOURCE_GROUP"
+
+      - name: Output Site URL
+        run: |
+          URL=$(az webapp show -n "$AZURE_WEBAPP_NAME" -g "$AZURE_RESOURCE_GROUP" --query defaultHostName -o tsv)
+          echo "App URL: https://$URL"
