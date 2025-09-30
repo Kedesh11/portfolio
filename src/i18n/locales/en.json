@@ -163,14 +163,14 @@
       "period": "2020 - 2025",
       "title": "Education",
       "microsoftAzure": {
-        "title": "Microsoft Azure Data Engineer Associate",
+        "title": "Microsoft Azure Machine Learning Associate",
         "subTitle": "Microsoft",
-        "result": "Certification obtained",
-        "description": "Professional certification in data engineering on the Azure platform."
+        "result": "In progress",
+        "description": "Professional certification in machine learning on the Azure platform."
       },
       "dataEngineering": {
         "title": "Data Engineering with Python",
-        "subTitle": "Training Institute",
+        "subTitle": "Openclassroom",
         "result": "Training completed",
         "description": "Intensive training in data engineering with Python, Apache Airflow and databases."
       },
@@ -181,7 +181,7 @@
         "description": "Complete training in full-stack development with Python, Django, React and databases."
       },
       "pythonFullstackUdemy": {
-        "title": "Python Full-Stack Bootcamp",
+        "title": "Python Full-Stack (Django)",
         "subTitle": "Udemy",
         "result": "Certification obtained",
         "description": "Intensive training in web development with Python, Django, Flask and frontend technologies."
@@ -189,7 +189,7 @@
       "secondarySchool": {
         "title": "Scientific Baccalaureate",
         "subTitle": "National High School",
-        "result": "Good Mention",
+        "result": "Honors",
         "description": "Secondary education with specialization in sciences and mathematics."
       }
     },
@@ -217,14 +217,14 @@
       "jobs": {
         "cnx": {
           "title": "Full-Stack Developer & Data Scientist",
-          "subTitle": "CNX 4.0",
-          "result": "Jan 2023 - Present",
+          "subTitle": "CNX Technologies",
+          "result": "04.2024 - Present",
           "des": "Development of web applications and data analysis solutions using Python, React, and machine learning technologies."
         },
         "esct": {
           "title": "Web Project Management Teacher",
           "subTitle": "ESCT",
-          "result": "Sep 2022 - Dec 2022",
+          "result": "14.01.2024 - 19.01.2024",
           "des": "Teaching web project management module to students. Covered topics including project planning, development methodologies, and modern web technologies."
         }
       },
@@ -234,26 +234,20 @@
         "nsia": {
           "title": "Data Analysis Intern",
           "subTitle": "NSIA Insurance",
-          "result": "Jun 2022 - Aug 2022",
+          "result": "09.2024 - 03.2025",
           "des": "Data analysis and reporting using Python and statistical methods."
         },
-        "olo": {
-          "title": "Web Development Intern",
-          "subTitle": "OLO Technologies",
-          "result": "Mar 2022 - May 2022",
-          "des": "Development of responsive web applications using React and Node.js."
-        },
         "pms": {
-          "title": "Web Development Intern",
-          "subTitle": "PMS Technologies",
-          "result": "Jan 2022 - Feb 2022",
+          "title": "Full Stack & Mobile Developer Intern",
+          "subTitle": "Philo Multi Services",
+          "result": "12.2023 - 06.2024",
           "des": "Development of responsive web applications using React and Node.js."
         },
         "bkm": {
-          "title": "Data Science Intern",
-          "subTitle": "BKM Analytics",
-          "result": "Nov 2021 - Dec 2021",
-          "des": "Data analysis and predictive model development with Python and machine learning."
+          "title": "Mobile Development Intern",
+          "subTitle": "BKM Gabon",
+          "result": "06.2021 - 11.2021",
+          "des": "Development of mobile applications using Flutter."
         }
       }
     },
@@ -261,23 +255,17 @@
       "title": "Achievements",
       "period": "2020 - 2025",
       "items": {
-        "microsoft": {
-          "title": "Microsoft Azure Data Engineer Associate",
-          "subTitle": "Microsoft",
+        "openclassroom": {
+          "title": "Data Engineer",
+          "subTitle": "Openclassroom",
           "result": "Certification obtained",
-          "des": "Professional certification in cloud data engineering on Azure platform."
+          "des": "Professional certification in data engineering."
         },
         "kaggle": {
-          "title": "Kaggle Competition Winner",
+          "title": "Kaggle Competition",
           "subTitle": "Kaggle",
-          "result": "1st Place",
-          "des": "Won first place in a machine learning competition with 500+ participants."
-        },
-        "speaker": {
-          "title": "AI Summit Speaker",
-          "subTitle": "Tech Conference",
-          "result": "Featured Speaker",
-          "des": "Presented on machine learning applications in business at major tech conference."
+          "result": "10th Place",
+          "des": "Achieved 10th place in a machine learning competition with 500+ participants."
         },
         "opensource": {
           "title": "Open Source Contributor",
@@ -286,16 +274,16 @@
           "des": "Contributed to major open source projects with 1000+ stars on GitHub."
         },
         "hackathon": {
-          "title": "Hackathon Winner",
+          "title": "Hackathon",
           "subTitle": "Tech Challenge",
-          "result": "1st Place",
-          "des": "Won first place in a 48-hour hackathon with innovative AI solution."
+          "result": "25th Place",
+          "des": "Ranked 25th in a 48-hour hackathon with an innovative AI solution."
         }
       },
       "achievements": {
         "certification1": {
-          "title": "Microsoft Azure Data Engineer Associate",
-          "description": "Professional certification in cloud data engineering."
+          "title": "Data Engineer",
+          "description": "Professional certification in data engineering."
         },
         "certification2": {
           "title": "Python Full-Stack Developer",
