@@ -19,28 +19,12 @@ const Achievement = () => {
         </div>
         <div className="mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
 
-          {/* Microsoft Certification */}
-          <ResumeCard
-            title={t('resume.achievements.items.microsoft.title')}
-            subTitle={t('resume.achievements.items.microsoft.subTitle')}
-            result={t('resume.achievements.items.microsoft.result')}
-            des={t('resume.achievements.items.microsoft.des')}
-          />
-
           {/* Kaggle Challenge */}
           <ResumeCard
             title={t('resume.achievements.items.kaggle.title')}
             subTitle={t('resume.achievements.items.kaggle.subTitle')}
             result={t('resume.achievements.items.kaggle.result')}
             des={t('resume.achievements.items.kaggle.des')}
-          />
-
-          {/* Speaker - AI Summit */}
-          <ResumeCard
-            title={t('resume.achievements.items.speaker.title')}
-            subTitle={t('resume.achievements.items.speaker.subTitle')}
-            result={t('resume.achievements.items.speaker.result')}
-            des={t('resume.achievements.items.speaker.des')}
           />
 
           {/* Open Source Contribution */}

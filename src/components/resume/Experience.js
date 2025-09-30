@@ -54,14 +54,6 @@ const Experience = () => {
             des={t('resume.experience.internships.nsia.des')}
           />
 
-          {/* O'lo Hub */}
-          <ResumeCard
-            title={t('resume.experience.internships.olo.title')}
-            subTitle={t('resume.experience.internships.olo.subTitle')}
-            result={t('resume.experience.internships.olo.result')}
-            des={t('resume.experience.internships.olo.des')}
-          />
-
           {/* PMS */}
           <ResumeCard
             title={t('resume.experience.internships.pms.title')}

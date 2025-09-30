@@ -19,7 +19,7 @@ export const LanguageProvider = ({ children }) => {
     // Vérifier s'il y a une langue sauvegardée
     const savedLanguage = localStorage.getItem('language');
     
-    if (savedLanguage && ['en', 'fr'].includes(savedLanguage)) {
+    if (savedLanguage && ['fr'].includes(savedLanguage)) {
       i18n.changeLanguage(savedLanguage);
       setCurrentLanguage(savedLanguage);
     } else {
@@ -31,26 +31,23 @@ export const LanguageProvider = ({ children }) => {
   }, [i18n]);
 
   const changeLanguage = (language) => {
-    if (['en', 'fr'].includes(language)) {
-      console.log('Changing language to:', language);
-      i18n.changeLanguage(language);
-      setCurrentLanguage(language);
-      localStorage.setItem('language', language);
-      // Forcer le re-render
-      window.location.reload();
+    if (language === 'fr') {
+      i18n.changeLanguage('fr');
+      setCurrentLanguage('fr');
+      localStorage.setItem('language', 'fr');
     }
   };
 
   const toggleLanguage = () => {
-    const newLanguage = currentLanguage === 'en' ? 'fr' : 'en';
-    changeLanguage(newLanguage);
+    // Français uniquement: pas de bascule
+    changeLanguage('fr');
   };
 
   const value = {
     currentLanguage,
     changeLanguage,
     toggleLanguage,
-    isEnglish: currentLanguage === 'en',
+    isEnglish: false,
     isFrench: currentLanguage === 'fr'
   };
 
