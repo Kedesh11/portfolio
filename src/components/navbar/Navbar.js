@@ -7,17 +7,21 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import {profile} from "../../assets/index";
 import {logo} from "../../assets/index";
 import { navLinksdata } from '../../constants';
+import PdfModal from "../common/PdfModal";
 
 const Navbar = () => {
   const [showMenu, setShowMenu]=useState(false)
   const { t } = useTranslation();
-  
+  const [openCv, setOpenCv] = useState(false);
+  const openCvModal = () => setOpenCv(true);
+  const closeCvModal = () => setOpenCv(false);
+
   return (
     <div className="w-full p-[3em] sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
       <div>
         <img src={logo} alt="profile" width={50} height={50}/>
       </div>
-      <div>
+      <div className="flex items-center gap-4">
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
           {navLinksdata.map(({ _id, title, link }) => (
             <li
@@ -37,6 +41,15 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        {/* CV button (desktop) */}
+        <button
+          type="button"
+          onClick={openCvModal}
+          className="hidden mdl:inline-flex items-center px-4 py-2 rounded-md border border-gray-600 text-gray-200 hover:bg-gray-800 hover:text-white transition"
+          aria-label="Open CV"
+        >
+          {t('navigation.cv')}
+        </button>
         <span
           onClick={() => setShowMenu(!showMenu)}
           className="text-xl mdl:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer"
@@ -73,6 +86,16 @@ const Navbar = () => {
                     </Link>
                   </li>
                 ))}
+                {/* CV button (mobile menu) */}
+                <li className="pt-2">
+                  <button
+                    type="button"
+                    onClick={() => { setShowMenu(false); openCvModal(); }}
+                    className="w-full text-left text-base font-normal text-gray-200 tracking-wide cursor-pointer hover:text-designColor duration-300"
+                  >
+                    {t('navigation.cv')}
+                  </button>
+                </li>
               </ul>
               <div className="flex flex-col gap-4">
                 <h2 className="text-base uppercase font-titleFont mb-4">
@@ -100,6 +123,8 @@ const Navbar = () => {
           </div>
         )}
       </div>
+      {/* PDF Preview Modal */}
+      <PdfModal open={openCv} onClose={closeCvModal} src="/Sevan.pdf" />
     </div>
   );
 }

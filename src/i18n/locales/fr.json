@@ -4,6 +4,7 @@
     "services": "Services",
     "projects": "Projets",
     "resume": "CV",
+    "cv": "CV",
     "contact": "Contact"
   },
   "banner": {
@@ -153,6 +154,7 @@
   "resume": {
     "title": "MON CV",
     "subtitle": "Mon parcours professionnel",
+    "downloadCv": "Télécharger le CV",
     "tabs": {
       "education": "Formation",
       "skills": "Compétences",
